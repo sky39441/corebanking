@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="${__NAMESPACE__}">
+	<insert id="I001" parameterClass="map"><![CDATA[/* 통지 등록 | admin (Administrator), 2021-03-03 21:25:59 */
+INSERT INTO SMS_IF (
+	  MEMBER_SEQ
+	, MEMBER_NAME
+	, MSG
+	, DESTEL1
+	, DESTEL2
+	, DESTEL3
+)
+VALUES (
+      (SELECT NVL(MAX(MEMBER_SEQ), 0) FROM SMS_IF)
+	, #MEMBER_NAME#
+	, #MSG#
+	, #DESTEL1#
+	, #DESTEL2#
+	, #DESTEL3#
+)]]>
+	</insert>
+</sqlMap>

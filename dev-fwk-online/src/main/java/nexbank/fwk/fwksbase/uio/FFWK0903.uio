@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<method-list>
+    <method fixedLength="false" id="cash">
+        <input>
+            <field additional="" formattingType="" id="ACC_NO" length="0" lengthRef="" name="계좌번호" padChar="" padType="" type="" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="KIND" length="0" lengthRef="" name="입/출금구분" padChar="" padType="" type="" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="AMOUNT" length="0" lengthRef="" name="금액" padChar="" padType="" type="" validationLogic="" validationType=""/>
+        </input>
+        <output/>
+    </method>
+</method-list>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="${__NAMESPACE__}">
+	<insert id="I001" parameterClass="map"><![CDATA[/* 에러로그 등록 | admin (Administrator), 2021-06-25 03:00:28 */
+INSERT INTO  TB_FWK_ERLOG_H (
+    LOG_DATE                  /* 로그영업일자        */
+  , GLOB_ID                   /* 글로벌 ID */
+  , PRGS_SRNO                 /* 진행일련번호        */
+  , FRST_GLOB_ID              /* 글로벌 ID */
+  , ENV_DVCD                  /* 환경구분코드        */
+  , TRTM_RSLT_CD              /* 처리결과코드        */
+  , TX_ID                     /* 거래코드            */
+  , RUNTIME_NODE_ID           /* WAS인스턴스ID       */
+  , SVC_STRN_DTTM             /* 서비스시작일시      */
+  , SVC_END_DTTM              /* 서비스종료일시      */
+  , SVC_DUR_TM                /* 서비스소요시간      */
+  , EROR_STACK                /* 에러 스택 */
+) VALUES (
+    #LOG_DATE#                /* 로그영업일자        */
+  , #GLOB_ID#                 /* 글로벌 ID */
+  , #PRGS_SRNO#               /* 진행일련번호        */
+  , #FRST_GLOB_ID#            /* 글로벌 ID */
+  , #ENV_DVCD#                /* 환경구분코드        */
+  , #TRTM_RSLT_CD#             /* 처리결과코드        */
+  , #TX_ID#                    /* 거래코드            */
+  , #RUNTIME_NODE_ID#
+  , #SVC_STRN_DTTM#
+  , #SVC_END_DTTM#
+  , #SVC_DUR_TM#
+  , #EROR_STACK,handler=clobHandler#        /* 에러 스택 */
+)]]>
+	</insert>
+</sqlMap>

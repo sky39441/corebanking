@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="${__NAMESPACE__}">
+	<insert id="I001" parameterClass="map"><![CDATA[/* 에러로그 등록 | Administrator(admin), 2018-09-12 21:54:17 */
+INSERT INTO  TB_FWK_ERLOG_H (
+    LOG_DATE               /* 로그영업일자        */
+  , SEQ_NO                    /* SEQ NO    */
+  , GLOB_ID                   /* 글로벌 ID */
+  , PRGS_SRNO                 /* 진행일련번호        */
+  , FRST_GLOB_ID                   /* 글로벌 ID */
+  , ENV_DVCD                  /* 환경구분코드        */
+  , TRTM_RSLT_CD              /* 처리결과코드        */
+  , TX_ID                     /* 거래코드            */
+  , SCRN_NO                   /* 화면번호            */
+  , MESG_VRSN_DVCD            /* 전문버전구분코드    */
+  , MESG_DVCD                 /* 전문구분코드        */
+  , MESG_TYCD                 /* 전문유형코드        */
+  , MESG_CNTY_SRNO            /* 전문연속일련번호    */
+  , CC_ID                     
+  , CC_PRC_DT                 
+  , CC_SEQ_NO                  
+  , XTIS_CD                   /* 대외기관코드        */
+  , BZWR_SVR_CD               /* 업무서버코드        */
+  , OTSD_MESG_CD              /* 대외전문코드        */
+  , OTSD_MESG_TRTM_CD         /* 대외전문처리코드    */
+  , OTSD_TRN_UNQ_NO           /* 대외거래고유번호    */
+  , OTSD_RESP_TX_ID           /* 대외응답거래코드    */
+  , CHNL_MSG_CD               /* 채널메시지코드      */
+  , MSG_CCNT                  /* 메시지건수          */
+  , MSG_CD1                   /* 메시지코드 1        */
+  , MSG_CNTN1                 /* 메시지내용 1        */
+  , EROR_OCRN_PRRM_LINE1      /* 오류발생 LINE 1     */
+  , EROR_OCRN_PRRM_NM1        /* 오류발생 APP명 1    */
+  , MSG_CD2                   /* 메시지코드 2        */
+  , MSG_CNTN2                 /* 메시지내용 2        */
+  , EROR_OCRN_PRRM_LINE2      /* 오류발생 LINE 2     */
+  , EROR_OCRN_PRRM_NM2        /* 오류발생 APP명 2    */
+  , MSG_CD3                   /* 메시지코드 3        */
+  , MSG_CNTN3                 /* 메시지내용 3        */
+  , EROR_OCRN_PRRM_LINE3      /* 오류발생 LINE 3     */
+  , EROR_OCRN_PRRM_NM3        /* 오류발생 APP명 3    */
+  , MSG_CD4                   /* 메시지코드 4        */
+  , MSG_CNTN4                 /* 메시지내용 4        */
+  , EROR_OCRN_PRRM_LINE4      /* 오류발생 LINE 4     */
+  , EROR_OCRN_PRRM_NM4        /* 오류발생 APP명 4    */
+  , MSG_CD5                   /* 메시지코드 5        */
+  , MSG_CNTN5                 /* 메시지내용 5        */
+  , EROR_OCRN_PRRM_LINE5      /* 오류발생 LINE 5     */
+  , EROR_OCRN_PRRM_NM5        /* 오류발생 APP명 5    */
+  , SPR_CHRS_CNTN             /* 예비문자열내용      */
+  , IPAD                      /* IP주소              */
+  , PRCM_MAC                  /* PC MAC주소          */
+  , TRN_TRNM_NO               /* 거래단말번호        */
+  , SSO_SESN_KEY              /* SSO 세션 KEY        */
+  , FRST_TRNM_CHNL_CD         /* 최초전송채널코드    */
+  , TRNM_CHNL_CD              /* 전송채널코드        */
+  , TRNM_NODE_NO              /* 전송노드번호        */
+  , MCI_TRNM_NODE_NO          /* MCI 전송채널코드    */
+  , ITLK_DPTH                 /* 연동깊이            */
+  , FRST_TX_ID               /* 최초거래코드        */
+  , MV_TX_ID                 /* 기동거래코드        */
+  , SYNC_DV                   /* Sync/Async구분      */
+  , RUNTIME_NODE_ID               /* WAS인스턴스ID       */
+  , MESG_DMND_DTTM            /* 전문요청일시        */
+  , MESG_RESP_DTTM            /* 전문응답일시        */
+  , TRN_DT                    /* 거래일자            */
+  , BZOP_DT                   /* 영업일자            */
+  , SVC_STRN_DTTM             /* 서비스시작일시      */
+  , SVC_END_DTTM              /* 서비스종료일시      */
+  , SVC_DUR_TM                /* 서비스소요시간      */
+  , BF_BZOP_DT                /* 전영업일자          */
+  , BF2_BZOP_DT               /* 전전영업일자        */
+  , BF3_BZOP_DT               /* 3전영업일자         */
+  , BF4_BZOP_DT               /* 4전영업일자         */
+  , BF5_BZOP_DT               /* 5전영업일자         */
+  , AF_BZOP_DT                /* 익영업일자          */
+  , AF2_BZOP_DT               /* 익익영업일자        */
+  , BR_CD                     /* 부점코드            */
+  , USER_NO                   /* 사용자번호          */
+  , USER_LOCALE               /* 사용자로케일          */
+  , USER_AUTH_GRP             /* 사용자권한그룹 */
+  , BR_DVCD                   /* 부점구분코드        */
+  , BR_ABRV_NM                /* 부점약어명          */
+  , ACNG_BR_CD                /* 회계부점코드        */
+  , UPRN_BR_CD                /* 상위부점코드        */
+  , CSHN_OCRN_YN              /* 시재발생여부        */
+  , CASH_AMT                  /* 현금금액            */
+  , OTBR_AMT1                 /* 타점금액1           */
+  , OTBR_AMT2                 /* 타점금액2           */
+  , SUM_AMT                   /* 합계금액            */
+  , ALTR_MNRC_AMT             /* 대체입금금액        */
+  , ALTR_WTCH_AMT             /* 대체출금금액        */
+  , ACNG_TRN_DVCD             /* 회계거래구분코드    */
+  , ACNG_TRN_STCD             /* 회계거래상태코드    */
+  , ACNG_CCNT                 /* 회계건수            */
+  , SLIP_NO                   /* 전표번호            */
+  , CAN_CRCT_SLIP_NO          /* 취소정정전표번호    */
+  , IFRS_SLIP_NO              /* IFRS전표번호        */
+  , IFRS_CAN_CRCT_SLIP_NO     /* IFRS취소정정전표번호*/
+  , CASH_WTCH                 /* 현금출금            */
+  , CASH_MNRC                 /* 현금입금            */
+  , ALTR_WTCH                 /* 대체출금            */
+  , ALTR_MNRC                 /* 대체입금            */
+  , OTBR1_WTCH_AMT            /* 타점1출금금액       */
+  , OTBR1_MNRC_AMT            /* 타점1입금금액       */
+  , OTBR2_WTCH_AMT            /* 타점2출금금액       */
+  , OTBR2_MNRC_AMT            /* 타점2입금금액       */
+  , ACNG_BASE_CD              /* 회계기준코드        */
+  , CUST_NO                   /* 고객번호            */
+  , ACNO                      /* 계좌번호            */
+  , TRN_AMT                   /* 거래금액            */
+  , APRV_STCD                 /* 승인구분코드        */
+  , APRV_DMND_TRN_AMT         /* 승인요청거래금액    */
+  , APRV_DMND_CUST_NM         /* 승인요청고객명      */
+  , APRV_MSG_CCNT             /* 승인메시지건수      */
+  , APRV_MSG_CD1              /* 승인메시지코드 1    */
+  , APRV_MSG_CNTN1            /* 승인메시지내용 1    */
+  , APRV_MSG_CD2              /* 승인메시지코드 2    */
+  , APRV_MSG_CNTN2            /* 승인메시지내용 2    */
+  , APRV_MSG_CD3              /* 승인메시지코드 3    */
+  , APRV_MSG_CNTN3            /* 승인메시지내용 3    */
+  , APRV_MSG_CD4              /* 승인메시지코드 4    */
+  , APRV_MSG_CNTN4            /* 승인메시지내용 4    */
+  , APRV_MSG_CD5              /* 승인메시지코드 5    */
+  , APRV_MSG_CNTN5            /* 승인메시지내용 5    */
+  , APRR_PCNT                 /* 인자 인원수 */
+  , APRR_EMNO1                /* 승인자 직원번호1 */
+  , APRR_EMNO2                /* 승인자 직원번호2 */
+  , APRR_EMNO3                /* 승인자 직원번호3 */
+  , APRR_EMNO4                /* 승인자 직원번호4 */
+  , APRR_EMNO5                /* 승인자 직원번호5 */
+  , EROR_STACK                /* 에러 스택 */
+) VALUES (
+    #LOG_DATE#                                         /* 로그영업일자        */
+  , SQ_FWK_ERLOG0.NEXTVAL                              /* SEQ NO */
+  , SUBSTRB  (#GLOB_ID#                  , 1, 32 )     /* 글로벌 ID */
+  , TO_NUMBER(#PRGS_SRNO#                        )     /* 진행일련번호        */
+  , SUBSTRB  (#FRST_GLOB_ID#                  , 1, 32 )     /* 글로벌 ID */
+  , SUBSTRB  (#ENV_DVCD#                 , 1, 1  )     /* 환경구분코드        */
+  , SUBSTRB  (#TRTM_RSLT_CD#             , 1, 1  )     /* 처리결과코드        */
+  , SUBSTRB  (#TX_ID#                    , 1, 8  )     /* 거래코드            */
+  , SUBSTRB  (#SCRN_NO#                  , 1, 9  )     /* 화면번호            */
+  , SUBSTRB  (#MESG_VRSN_DVCD#           , 1, 3  )     /* 전문버전구분코드    */
+  , SUBSTRB  (#MESG_DVCD#                , 1, 1  )     /* 전문구분코드        */
+  , SUBSTRB  (#MESG_TYCD#                , 1, 1  )     /* 전문유형코드        */
+  , TO_NUMBER(#MESG_CNTY_SRNO#                   )     /* 전문연속일련번호    */
+  , SUBSTRB  (#CC_ID#                    , 1, 8  )     
+  , SUBSTRB  (#CC_PRC_DT#                , 1, 8  )     
+  , TO_NUMBER(#CC_SEQ_NO#                        )     
+  , SUBSTRB  (#XTIS_CD#                  , 1, 4  )     /* 대외기관코드        */
+  , SUBSTRB  (#BZWR_SVR_CD#              , 1, 4  )     /* 업무서버코드        */
+  , SUBSTRB  (#OTSD_MESG_CD#             , 1, 32 )     /* 대외전문코드        */
+  , SUBSTRB  (#OTSD_MESG_TRTM_CD#        , 1, 32 )     /* 대외전문처리코드    */
+  , SUBSTRB  (#OTSD_TRN_UNQ_NO#          , 1, 32 )     /* 대외거래고유번호    */
+  , SUBSTRB  (#OTSD_RESP_TX_ID#          , 1, 8  )     /* 대외응답거래코드    */
+  , SUBSTRB  (#CHNL_MSG_CD#              , 1, 10 )     /* 채널메시지코드      */
+  , TO_NUMBER(#MSG_CCNT#                         )     /* 메시지건수          */
+  , SUBSTRB  (#MSG_CD1#                  , 1, 8  )     /* 메시지코드 1        */
+  , SUBSTRB  (#MSG_CNTN1#                , 1, 1000)     /* 메시지내용 1        */
+  , TO_NUMBER(#EROR_OCRN_PRRM_LINE1#             )     /* 오류발생 LINE 1     */
+  , SUBSTRB  (#EROR_OCRN_PRRM_NM1#       , 1, 100)     /* 오류발생 APP명 1    */
+  , SUBSTRB  (#MSG_CD2#                  , 1, 8  )     /* 메시지코드 2        */
+  , SUBSTRB  (#MSG_CNTN2#                , 1, 1000)     /* 메시지내용 2        */
+  , TO_NUMBER(#EROR_OCRN_PRRM_LINE2#             )     /* 오류발생 LINE 2     */
+  , SUBSTRB  (#EROR_OCRN_PRRM_NM2#       , 1, 100)     /* 오류발생 APP명 2    */
+  , SUBSTRB  (#MSG_CD3#                  , 1, 8  )     /* 메시지코드 3        */
+  , SUBSTRB  (#MSG_CNTN3#                , 1, 1000)     /* 메시지내용 3        */
+  , TO_NUMBER(#EROR_OCRN_PRRM_LINE3#             )     /* 오류발생 LINE 3     */
+  , SUBSTRB  (#EROR_OCRN_PRRM_NM3#       , 1, 100)     /* 오류발생 APP명 3    */
+  , SUBSTRB  (#MSG_CD4#                  , 1, 8  )     /* 메시지코드 4        */
+  , SUBSTRB  (#MSG_CNTN4#                , 1, 1000)     /* 메시지내용 4        */
+  , TO_NUMBER(#EROR_OCRN_PRRM_LINE4#             )     /* 오류발생 LINE 4     */
+  , SUBSTRB  (#EROR_OCRN_PRRM_NM4#       , 1, 100)     /* 오류발생 APP명 4    */
+  , SUBSTRB  (#MSG_CD5#                  , 1, 8  )     /* 메시지코드 5        */
+  , SUBSTRB  (#MSG_CNTN5#                , 1, 1000)     /* 메시지내용 5        */
+  , TO_NUMBER(#EROR_OCRN_PRRM_LINE5#             )     /* 오류발생 LINE 5     */
+  , SUBSTRB  (#EROR_OCRN_PRRM_NM5#       , 1, 100)     /* 오류발생 APP명 5    */
+  , SUBSTRB  (#SPR_CHRS_CNTN#            , 1, 80 )     /* 예비문자열내용      */
+  , SUBSTRB  (#IPAD#                     , 1, 15 )     /* IP주소              */
+  , SUBSTRB  (#PRCM_MAC#                 , 1, 12 )     /* PC MAC주소          */
+  , SUBSTRB  (#TRN_TRNM_NO#              , 1, 8  )     /* 거래단말번호        */
+  , SUBSTRB  (#SSO_SESN_KEY#             , 1, 30 )     /* SSO 세션 KEY        */
+  , SUBSTRB  (#FRST_TRNM_CHNL_CD#        , 1, 3  )     /* 최초전송채널코드    */
+  , SUBSTRB  (#TRNM_CHNL_CD#             , 1, 3  )     /* 전송채널코드        */
+  , TO_NUMBER(#TRNM_NODE_NO#                     )     /* 전송노드번호        */
+  , SUBSTRB  (#MCI_TRNM_NODE_NO#         , 1, 2  )     /* MCI 전송채널코드    */
+  , TO_NUMBER(#ITLK_DPTH#                        )     /* 연동깊이            */
+  , SUBSTRB  (#FRST_TX_ID#              , 1, 8  )     /* 최초거래코드        */
+  , SUBSTRB  (#MV_TX_ID#                , 1, 8  )     /* 기동거래코드        */
+  , SUBSTRB  (#SYNC_DV#                  , 1, 1  )     /* Sync/Async구분      */
+  , SUBSTRB  (#RUNTIME_NODE_ID#              , 1, 10 )     /* WAS인스턴스ID       */
+  , SUBSTRB  (#MESG_DMND_DTTM#           , 1, 17 )     /* 전문요청일시        */
+  , SUBSTRB  (#MESG_RESP_DTTM#           , 1, 17 )     /* 전문응답일시        */
+  , SUBSTRB  (#TRN_DT#                   , 1, 8  )     /* 거래일자            */
+  , SUBSTRB  (#BZOP_DT#                  , 1, 8  )     /* 영업일자            */
+  , SUBSTRB  (#SVC_STRN_DTTM#            , 1, 17 )     /* 서비스시작일시      */
+  , SUBSTRB  (#SVC_END_DTTM#             , 1, 17 )     /* 서비스종료일시      */
+  , TO_NUMBER(#SVC_DUR_TM#                       )     /* 서비스소요시간            */
+  , SUBSTRB  (#BF_BZOP_DT#               , 1, 8  )     /* 전영업일자          */
+  , SUBSTRB  (#BF2_BZOP_DT#              , 1, 8  )     /* 전전영업일자        */
+  , SUBSTRB  (#BF3_BZOP_DT#              , 1, 8  )     /* 3전영업일자         */
+  , SUBSTRB  (#BF4_BZOP_DT#              , 1, 8  )     /* 4전영업일자         */
+  , SUBSTRB  (#BF5_BZOP_DT#              , 1, 8  )     /* 5전영업일자         */
+  , SUBSTRB  (#AF_BZOP_DT#               , 1, 8  )     /* 익영업일자          */
+  , SUBSTRB  (#AF2_BZOP_DT#              , 1, 8  )     /* 익익영업일자        */
+  , SUBSTRB  (#BR_CD#                    , 1, 3  )     /* 부점코드            */
+  , SUBSTRB  (#USER_NO#                  , 1, 7  )     /* 사용자번호          */
+  , SUBSTRB  (#USER_LOCALE#              , 1, 5  )     /* 사용자로케일          */
+  , SUBSTRB  (#USER_AUTH_GRP#            , 1, 7  )     /* 사용자권한그룹 */
+  , SUBSTRB  (#BR_DVCD#                  , 1, 1  )     /* 부점구분코드        */
+  , SUBSTRB  (#BR_ABRV_NM#               , 1, 6  )     /* 부점약어명          */
+  , SUBSTRB  (#ACNG_BR_CD#               , 1, 4  )     /* 회계부점코드        */
+  , SUBSTRB  (#UPRN_BR_CD#               , 1, 4  )     /* 상위부점코드        */
+  , SUBSTRB  (#CSHN_OCRN_YN#             , 1, 1  )     /* 시재발생여부        */
+  , TO_NUMBER(#CASH_AMT#                         )     /* 현금금액            */
+  , TO_NUMBER(#OTBR_AMT1#                        )     /* 타점금액1           */
+  , TO_NUMBER(#OTBR_AMT2#                        )     /* 타점금액2           */
+  , TO_NUMBER(#SUM_AMT#                          )     /* 합계금액            */
+  , TO_NUMBER(#ALTR_MNRC_AMT#                    )     /* 대체입금금액        */
+  , TO_NUMBER(#ALTR_WTCH_AMT#                    )     /* 대체출금금액        */
+  , SUBSTRB  (#ACNG_TRN_DVCD#            , 1, 1  )     /* 회계거래구분코드    */
+  , SUBSTRB  (#ACNG_TRN_STCD#            , 1, 1  )     /* 회계거래상태코드    */
+  , TO_NUMBER(#ACNG_CCNT#                        )     /* 회계건수            */
+  , SUBSTRB  (#SLIP_NO#                  , 1, 27 )     /* 전표번호            */
+  , SUBSTRB  (#CAN_CRCT_SLIP_NO#         , 1, 27 )     /* 취소정정전표번호    */
+  , SUBSTRB  (#IFRS_SLIP_NO#             , 1, 27 )     /* IFRS전표번호        */
+  , SUBSTRB  (#IFRS_CAN_CRCT_SLIP_NO#    , 1, 27 )     /* IFRS취소정정전표번호*/
+  , TO_NUMBER(#CASH_WTCH#                        )     /* 현금출금            */
+  , TO_NUMBER(#CASH_MNRC#                        )     /* 현금입금            */
+  , TO_NUMBER(#ALTR_WTCH#                        )     /* 대체출금            */
+  , TO_NUMBER(#ALTR_MNRC#                        )     /* 대체입금            */
+  , TO_NUMBER(#OTBR1_WTCH_AMT#                   )     /* 타점1출금금액       */
+  , TO_NUMBER(#OTBR1_MNRC_AMT#                   )     /* 타점1입금금액       */
+  , TO_NUMBER(#OTBR2_WTCH_AMT#                   )     /* 타점2출금금액       */
+  , TO_NUMBER(#OTBR2_MNRC_AMT#                   )     /* 타점2입금금액       */
+  , SUBSTRB  (#ACNG_BASE_CD#             , 1, 1  )     /* 회계기준코드        */
+  , SUBSTRB  (#CUST_NO#                  , 1, 10 )     /* 고객번호            */
+  , SUBSTRB  (#ACNO#                     , 1, 20 )     /* 계좌번호            */
+  , TO_NUMBER(#TRN_AMT#                          )     /* 거래금액            */
+  , SUBSTRB  (#APRV_STCD#                , 1, 2  )     /* 승인구분코드        */
+  , TO_NUMBER(#APRV_DMND_TRN_AMT#                )     /* 승인요청거래금액    */
+  , SUBSTRB  (#APRV_DMND_CUST_NM#        , 1, 50 )     /* 승인요청고객명      */
+  , TO_NUMBER(#APRV_MSG_CCNT#                    )     /* 승인메시지건수      */
+  , SUBSTRB  (#APRV_MSG_CD1#             , 1, 8  )     /* 승인메시지코드 1    */
+  , SUBSTRB  (#APRV_MSG_CNTN1#           , 1, 100)     /* 승인메시지내용 1    */
+  , SUBSTRB  (#APRV_MSG_CD2#             , 1, 8  )     /* 승인메시지코드 2    */
+  , SUBSTRB  (#APRV_MSG_CNTN2#           , 1, 100)     /* 승인메시지내용 2    */
+  , SUBSTRB  (#APRV_MSG_CD3#             , 1, 8  )     /* 승인메시지코드 3    */
+  , SUBSTRB  (#APRV_MSG_CNTN3#           , 1, 100)     /* 승인메시지내용 3    */
+  , SUBSTRB  (#APRV_MSG_CD4#             , 1, 8  )     /* 승인메시지코드 4    */
+  , SUBSTRB  (#APRV_MSG_CNTN4#           , 1, 100)     /* 승인메시지내용 4    */
+  , SUBSTRB  (#APRV_MSG_CD5#             , 1, 8  )     /* 승인메시지코드 5    */
+  , SUBSTRB  (#APRV_MSG_CNTN5#           , 1, 100)     /* 승인메시지내용 5    */
+  , TO_NUMBER(#APRR_PCNT#                        )     /* 승인자 인원수 */
+  , SUBSTRB  (#APRR_EMNO1#               , 1, 7  )     /* 승인자 직원번호1 */
+  , SUBSTRB  (#APRR_EMNO2#               , 1, 7  )     /* 승인자 직원번호2 */
+  , SUBSTRB  (#APRR_EMNO3#               , 1, 7  )     /* 승인자 직원번호3 */
+  , SUBSTRB  (#APRR_EMNO4#               , 1, 7  )     /* 승인자 직원번호4 */
+  , SUBSTRB  (#APRR_EMNO5#               , 1, 7  )     /* 승인자 직원번호5 */
+  , #EROR_STACK,handler=clobHandler#                   /* 에러 스택 */
+)]]>
+	</insert>
+</sqlMap>
