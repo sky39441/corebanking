@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xio>
+	<fixedLength>true</fixedLength>
+    <name>타행계좌이체</name>
+    <description>타행계좌이체</description>
+    <layout>
+    	<field id="BANK_NO" name="은행코드" type="string" length="4" lengthRef="" padType="right" padChar="0x20" />
+    	<field id="ACC_NO"  name="계좌번호" type="string" length="20" lengthRef="" padType="right" padChar="0x20" />
+    	<field id="DESCRIPTION" name="메시지" type="string" length="128" lengthRef="" padType="right" padChar="0x20" />
+    	<field id="AMOUNT" name="금액" type="string" length="17" lengthRef="" padType="left" padChar="0x30" />
+    </layout>
+</xio>

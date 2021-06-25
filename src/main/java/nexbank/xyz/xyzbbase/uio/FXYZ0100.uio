@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<method-list>
+  <method id="checkAccNo" fixedLength="false">
+    <input>
+      <field id="ACC_NO" name="계좌번호" type="" length="0" lengthRef="" padType="" padChar="" formattingType="" additional="" />
+      <field id="ACC_PASSWD_CHECK_YN" name="계좌비밀번호체크여부" type="" length="0" lengthRef="" padType="" padChar="" formattingType="" additional="" />
+    </input>
+    <output>
+      <field id="EXIST_ACC_YN" name="존재여부" type="" length="0" lengthRef="" padType="" padChar="" formattingType="" additional="" />
+      <field id="VALID_ACC_PASSWD_YN" name="비밀번호유효여부" type="" length="0" lengthRef="" padType="" padChar="" formattingType="" additional="" />
+    </output>
+  </method>
+</method-list>
+

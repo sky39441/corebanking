@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+    <requestData>
+        <context>
+            <txId name="거래아이디" type="Text"/>
+            <txRollback name="롤백여부" type="Text"><![CDATA[false]]></txRollback>
+            <userInfo name="사용자정보" type="Object">
+                <loginId name="아이디" type="Text"/>
+            </userInfo>
+            <attributes name="속성들" type="Object">
+                <userId name="userId " type="Text"><![CDATA[admin]]></userId>
+                <userName name="userName" type="Text"><![CDATA[Administrator]]></userName>
+                <time name="시각(HHmmss)" type="Text"><![CDATA[212448]]></time>
+                <dateTime name="일시(yyyyMMddHHmmss)" type="Text"><![CDATA[20180917212448]]></dateTime>
+            </attributes>
+        </context>
+        <body>
+            <field id="BR_CD" length="3" name="부점코드" type="string"><![CDATA[1]]></field>
+            <field id="PRD_CD" length="2" name="상품코드" type="string"><![CDATA[1]]></field>
+        </body>
+    </requestData>
+    <expectedData>
+        <config>
+            <assert>true</assert>
+            <failed>true</failed>
+            <failedErrorId/>
+        </config>
+        <body>
+            <field assert="false" id="BR_CD" length="3" name="부점코드" type="string"/>
+            <field assert="false" id="PRD_CD" length="2" name="상품코드" type="string"/>
+            <field assert="false" id="ACC_LIST_SIZE" length="5" name="계좌목록사이즈" type="int"/>
+            <field assert="false" id="BR_LIST_SIZE" length="5" name="부점목록사이즈" type="int"/>
+            <field assert="false" id="PRD_LIST_SIZE" length="5" name="상품목록사이즈" type="int"/>
+            <recordSet assert="false" id="ACC_LIST" name="계좌목록" recordCount="0" recordCountRef="ACC_LIST_SIZE" type="Object">
+                <record assert="false" id="1" name="record" type="Array">
+                    <field assert="false" id="ACC_NO" length="20" name="ACC_NO" type="string"/>
+                    <field assert="false" id="ACC_NAME" length="128" name="ACC_NAME" type="string"/>
+                    <field assert="false" id="ACC_BALANCE" length="17" name="ACC_BALANCE" type="long"/>
+                    <field assert="false" id="CRE_DTM" length="17" name="CRE_DTM" type="string"/>
+                    <field assert="false" id="UPD_DTM" length="17" name="UPD_DTM" type="string"/>
+                </record>
+            </recordSet>
+            <recordSet assert="false" id="BR_LIST" name="부점목록" recordCount="0" recordCountRef="BR_LIST_SIZE" type="Object">
+                <record assert="false" id="1" name="record" type="Array">
+                    <field assert="false" id="BR_CD" length="3" name="부점코드" type="string"/>
+                    <field assert="false" id="BR_NAME" length="128" name="부점명" type="string"/>
+                </record>
+            </recordSet>
+            <recordSet assert="false" id="PRD_LIST" name="상품목록" recordCount="0" recordCountRef="PRD_LIST_SIZE" type="Object">
+                <record assert="false" id="1" name="record" type="Array">
+                    <field assert="false" id="PRD_CD" length="2" name="상품코드" type="string"/>
+                    <field assert="false" id="PRD_NAME" length="128" name="상품명" type="string"/>
+                </record>
+            </recordSet>
+        </body>
+    </expectedData>
+</root>

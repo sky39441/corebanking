@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <context>
+    <txId>nexbank.xyz.xyzbbase@DTB_CBS_TRLOG_H_00.s001</txId>
+    <globId>20190903093930276DFWKXXXXDPOC0100001</globId>
+    <startDate>20190903093930278</startDate>
+    <endDate>20190903093930478</endDate>
+    <attributes />
+  </context>
+  <message>
+    <status>OK</status>
+    <messageId />
+    <messageValue />
+    <messageReason />
+  </message>
+  <body>
+    <TRLOG_LIST type="recordSet">
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>100000001</SEQ_NO>
+        <GLOB_ID>20190726114049005LUSTlocalhost01</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01001</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01001</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 11:40:49 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>200000001</SEQ_NO>
+        <GLOB_ID>20190726114051047LUSTlocalhost02</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01001</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01001</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 11:40:51 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>300000001</SEQ_NO>
+        <GLOB_ID>20190726114056050LUSTlocalhost03</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 11:40:56 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>400000001</SEQ_NO>
+        <GLOB_ID>20190726114057384LUSTlocalhost04</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 11:40:57 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>500000001</SEQ_NO>
+        <GLOB_ID>20190726114058471LUSTlocalhost05</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 11:40:58 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>600000001</SEQ_NO>
+        <GLOB_ID>20190726114059735LUSTlocalhost06</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 11:40:59 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>700000001</SEQ_NO>
+        <GLOB_ID>20190726114101383LUSTlocalhost07</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01005</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01005</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 11:41:01 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>800000001</SEQ_NO>
+        <GLOB_ID>20190726114102486LUSTlocalhost08</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01005</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01005</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 11:41:02 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>900000001</SEQ_NO>
+        <GLOB_ID>20190726114103435LUSTlocalhost09</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ00101</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ00101</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 11:41:03 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>1</SEQ_NO>
+        <GLOB_ID>20190726114104336LUSTlocalhost10</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01001</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01001</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 11:41:04 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>100000002</SEQ_NO>
+        <GLOB_ID>20190726114104439LUSTlocalhost11</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 11:41:04 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>200000002</SEQ_NO>
+        <GLOB_ID>20190726114105886LUSTlocalhost12</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 11:41:05 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>300000002</SEQ_NO>
+        <GLOB_ID>20190726114106734LUSTlocalhost13</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 11:41:06 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>400000002</SEQ_NO>
+        <GLOB_ID>20190726121200310LUSTlocalhost14</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01001</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01001</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 12:12:00 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>500000002</SEQ_NO>
+        <GLOB_ID>20190726121200403LUSTlocalhost15</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 12:12:00 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>600000002</SEQ_NO>
+        <GLOB_ID>20190726121201417LUSTlocalhost16</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01005</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01005</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 12:12:01 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>700000002</SEQ_NO>
+        <GLOB_ID>20190726121203414LUSTlocalhost17</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01001</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01001</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 12:12:03 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>800000002</SEQ_NO>
+        <GLOB_ID>20190726121203477LUSTlocalhost18</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 12:12:03 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>400000003</SEQ_NO>
+        <GLOB_ID>20190726155458541LUSTlocalhost04</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01001</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01001</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:54:58 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>100000003</SEQ_NO>
+        <GLOB_ID>20190726155508942LUSTlocalhost01</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01001</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01001</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:09 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>200000003</SEQ_NO>
+        <GLOB_ID>20190726155509153LUSTlocalhost02</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01001</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01001</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:09 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>300000003</SEQ_NO>
+        <GLOB_ID>20190726155513098LUSTlocalhost03</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:13 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>500000005</SEQ_NO>
+        <GLOB_ID>20190726155532585LUSTlocalhost25</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:32 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>600000005</SEQ_NO>
+        <GLOB_ID>20190726155533646LUSTlocalhost26</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:33 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>700000005</SEQ_NO>
+        <GLOB_ID>20190726155534222LUSTlocalhost27</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:34 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>800000005</SEQ_NO>
+        <GLOB_ID>20190726155534646LUSTlocalhost28</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:34 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>900000004</SEQ_NO>
+        <GLOB_ID>20190726164408371LUSTlocalhost29</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01001</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01001</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 16:44:08 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>4</SEQ_NO>
+        <GLOB_ID>20190726164408441LUSTlocalhost30</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 16:44:08 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>100000006</SEQ_NO>
+        <GLOB_ID>20190726164409227LUSTlocalhost31</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 16:44:09 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>700000006</SEQ_NO>
+        <GLOB_ID>20190726170409143LUSTlocalhost37</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 17:04:09 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>800000006</SEQ_NO>
+        <GLOB_ID>20190726170412119LUSTlocalhost38</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 17:04:12 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>900000005</SEQ_NO>
+        <GLOB_ID>20190726170413079LUSTlocalhost39</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 17:04:13 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>100000007</SEQ_NO>
+        <GLOB_ID>20190726170831708LUSTlocalhost41</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 17:08:31 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>200000006</SEQ_NO>
+        <GLOB_ID>20190726170833572LUSTlocalhost42</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 17:08:33 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>300000006</SEQ_NO>
+        <GLOB_ID>20190726170834156LUSTlocalhost43</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 17:08:34 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>400000007</SEQ_NO>
+        <GLOB_ID>20190726170834732LUSTlocalhost44</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 17:08:34 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>500000006</SEQ_NO>
+        <GLOB_ID>20190726170835428LUSTlocalhost45</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 17:08:35 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>600000006</SEQ_NO>
+        <GLOB_ID>20190726170838867LUSTlocalhost46</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01101</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01101</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 17:08:38 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>700000007</SEQ_NO>
+        <GLOB_ID>20190726170838993LUSTlocalhost47</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01001</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01001</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 17:08:39 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>800000007</SEQ_NO>
+        <GLOB_ID>20190726170839098LUSTlocalhost48</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 17:08:39 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>900000006</SEQ_NO>
+        <GLOB_ID>20190726170841372LUSTlocalhost49</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 17:08:41 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>5</SEQ_NO>
+        <GLOB_ID>20190726170842547LUSTlocalhost50</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 17:08:42 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>100000008</SEQ_NO>
+        <GLOB_ID>20190726170845780LUSTlocalhost51</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01101</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01101</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 17:08:45 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>200000007</SEQ_NO>
+        <GLOB_ID>20190726170845873LUSTlocalhost52</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01001</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01001</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 17:08:45 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>300000007</SEQ_NO>
+        <GLOB_ID>20190726170845971LUSTlocalhost53</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 17:08:45 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>400000004</SEQ_NO>
+        <GLOB_ID>20190726155514018LUSTlocalhost04</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:14 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>500000003</SEQ_NO>
+        <GLOB_ID>20190726155514505LUSTlocalhost05</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:14 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>600000003</SEQ_NO>
+        <GLOB_ID>20190726155515179LUSTlocalhost06</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01005</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01005</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:15 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>700000003</SEQ_NO>
+        <GLOB_ID>20190726155515845LUSTlocalhost07</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ00101</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ00101</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:15 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>800000003</SEQ_NO>
+        <GLOB_ID>20190726155517398LUSTlocalhost08</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01001</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01001</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:17 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>900000002</SEQ_NO>
+        <GLOB_ID>20190726155517498LUSTlocalhost09</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:17 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>2</SEQ_NO>
+        <GLOB_ID>20190726155520681LUSTlocalhost10</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01001</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01001</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:20 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>100000004</SEQ_NO>
+        <GLOB_ID>20190726155520759LUSTlocalhost11</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:20 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>200000004</SEQ_NO>
+        <GLOB_ID>20190726155521648LUSTlocalhost12</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:21 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>300000004</SEQ_NO>
+        <GLOB_ID>20190726155522513LUSTlocalhost13</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:22 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>400000005</SEQ_NO>
+        <GLOB_ID>20190726155522992LUSTlocalhost14</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:23 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>500000004</SEQ_NO>
+        <GLOB_ID>20190726155525160LUSTlocalhost15</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01001</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01001</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:25 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>600000004</SEQ_NO>
+        <GLOB_ID>20190726155525217LUSTlocalhost16</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:25 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>700000004</SEQ_NO>
+        <GLOB_ID>20190726155526225LUSTlocalhost17</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01001</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01001</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:26 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>800000004</SEQ_NO>
+        <GLOB_ID>20190726155526307LUSTlocalhost18</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:26 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>900000003</SEQ_NO>
+        <GLOB_ID>20190726155526872LUSTlocalhost19</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:26 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>3</SEQ_NO>
+        <GLOB_ID>20190726155527984LUSTlocalhost20</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:27 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>100000005</SEQ_NO>
+        <GLOB_ID>20190726155529152LUSTlocalhost21</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:29 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>200000005</SEQ_NO>
+        <GLOB_ID>20190726155531841LUSTlocalhost22</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01001</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01001</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:31 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>300000005</SEQ_NO>
+        <GLOB_ID>20190726155531905LUSTlocalhost23</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01004</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01004</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:31 KST 2019</SVC_STRN_DTTM>
+      </record>
+      <record>
+        <LOG_DATE>20190726</LOG_DATE>
+        <SEQ_NO>400000006</SEQ_NO>
+        <GLOB_ID>20190726155532527LUSTlocalhost24</GLOB_ID>
+        <ENV_DVCD>D</ENV_DVCD>
+        <TX_ID>XYZ01001</TX_ID>
+        <ITLK_DPTH>0</ITLK_DPTH>
+        <FRST_TX_ID>XYZ01001</FRST_TX_ID>
+        <MV_TX_ID />
+        <SYNC_DV>S</SYNC_DV>
+        <SVC_STRN_DTTM>Fri Jul 26 15:55:32 KST 2019</SVC_STRN_DTTM>
+      </record>
+    </TRLOG_LIST>
+  </body>
+</root>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="${__NAMESPACE__}">
+	<select id="S001" parameterClass="map" resultClass="hmap" fetchSize="50"><![CDATA[/* AAA SELECT | admin (Administrator), 2021-04-26 15:50:04 */
+SELECT
+       a.A  AS A  /*  */ 
+     , a.B  AS B  /*  */ 
+     , a.C  AS C  /*  */ 
+     , a.MM AS MM /*  */ 
+  FROM AAA a /*  */ 
+ WHERE a.A  = #A#
+   AND a.B  = #B#
+   AND a.C  = #C#
+   AND a.MM = #MM#]]>
+	</select>
+	<select id="S002" parameterClass="map" resultClass="hmap" fetchSize="50"><![CDATA[/* AAA SELECT ALL | admin (Administrator), 2021-04-26 15:50:10 */
+SELECT
+       a.A  AS A  /*  */ 
+     , a.B  AS B  /*  */ 
+     , a.C  AS C  /*  */ 
+     , a.MM AS MM /*  */ 
+  FROM AAA a /*  */ ]]>
+	</select>
+	<insert id="I001" parameterClass="map"><![CDATA[/* AAA INSERT | admin (Administrator), 2021-04-26 15:50:04 */
+INSERT
+  INTO AAA
+      ( A  /*  */ 	
+      , B  /*  */ 	
+      , C  /*  */ 	
+      , MM /*  */ )	
+VALUES
+      ( #A#	
+      , #B# 	
+      , #C# 	
+      , #MM#)]]>
+	</insert>
+	<update id="U001" parameterClass="map"><![CDATA[/* AAA UPDATE | admin (Administrator), 2021-04-26 15:50:21 */
+UPDATE AAA
+   SET A  = #A#  /*  */ 
+     , B  = #B#  /*  */ 
+     , C  = #C#  /*  */ 
+     , MM = #MM# /*  */ 
+ WHERE A = #A#]]>
+	</update>
+	<delete id="D001" parameterClass="map"><![CDATA[/* AAA DELETE | admin (Administrator), 2021-04-26 15:50:30 */
+DELETE
+  FROM AAA
+ WHERE A = #A#]]>
+	</delete>
+</sqlMap>

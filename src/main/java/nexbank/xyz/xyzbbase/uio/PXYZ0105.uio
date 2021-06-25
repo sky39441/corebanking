@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<method-list>
+  <method id="pXYZ01501" fixedLength="true">
+    <input>
+      <field id="SEARCH_VALUE" name="검색값" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+    </input>
+    <output>
+      <field id="CUST_SIZE" name="고객목록 건수" type="int" length="5" lengthRef="" padType="left" padChar="0x30" formattingType="" additional="" />
+      <recordSet id="CUST_LIST" name="고객목록" recordCount="0" recordCountRef="CUST_SIZE">
+        <field id="ID" name="아이디" type="string" length="40" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="NAME" name="한글명" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="ENG_NAME" name="영문명" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="BIRTHDAY" name="생년월일" type="string" length="7" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="CUSTOMER_TYPE" name="고객타입" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="CELLPHONE" name="휴대전화" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="EMAIL" name="이메일" type="string" length="50" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="POSTAL_CODE" name="우편번호" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="ADDRESS" name="자택주소" type="string" length="256" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="ADDRESS_DETAIL" name="상세주소" type="string" length="256" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="HOME_PHONE" name="자택전화" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="COMPANY" name="직장명" type="string" length="50" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="DEPARTMENT" name="부서명" type="string" length="50" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="POSITION" name="직위" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="COMPANY_PHONE" name="직장전화" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="BLOOD_TYPE" name="혈액형" type="string" length="2" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="RELIGION" name="종교" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="HOBBY" name="취미" type="string" length="50" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="WEDDING_ANNIVERSARY" name="결혼기념일" type="string" length="7" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="INCOME_FOR_YEAR" name="연수입" type="string" length="22" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="SAVING_FOR_MONTH" name="월저축" type="string" length="22" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="CREATED_DATE" name="등록일" type="string" length="7" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="MODIFIED_DATE" name="수정일" type="string" length="7" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="NOTES" name="비고" type="string" length="1000" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      </recordSet>
+    </output>
+  </method>
+  <method id="pXYZ01502" fixedLength="true">
+    <input>
+      <field id="ID" name="아이디" type="string" length="40" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="NAME" name="한글명" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="ENG_NAME" name="영문명" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="BIRTHDAY" name="생년월일" type="string" length="7" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="CUSTOMER_TYPE" name="고객타입" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="CELLPHONE" name="휴대전화" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="EMAIL" name="이메일" type="string" length="50" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="POSTAL_CODE" name="우편번호" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="ADDRESS" name="자택주소" type="string" length="256" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="ADDRESS_DETAIL" name="상세주소" type="string" length="256" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="HOME_PHONE" name="자택전화" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="COMPANY" name="직장명" type="string" length="50" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="DEPARTMENT" name="부서명" type="string" length="50" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="POSITION" name="직위" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="COMPANY_PHONE" name="직장전화" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="BLOOD_TYPE" name="혈액형" type="string" length="2" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="RELIGION" name="종교" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="HOBBY" name="취미" type="string" length="50" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="WEDDING_ANNIVERSARY" name="결혼기념일" type="string" length="7" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="INCOME_FOR_YEAR" name="연수입" type="string" length="22" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="SAVING_FOR_MONTH" name="월저축" type="string" length="22" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="NOTES" name="비고" type="string" length="1000" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+    </input>
+    <output>
+      <field id="EXPECTED_ROW" name="반영건수" type="int" length="5" lengthRef="" padType="left" padChar="0x30" formattingType="" additional="" />
+    </output>
+  </method>
+</method-list>
+

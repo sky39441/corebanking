@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="${__NAMESPACE__}">
+	<parameterMap id="P001_MAP" class="map" >
+		<parameter property="P_INVAL" jdbcType="INTEGER" javaType="java.lang.String" mode="IN" />
+		<parameter property="P_OUTVAL" jdbcType="INTEGER" javaType="java.lang.Integer" mode="OUT" />
+	</parameterMap>
+	<procedure id="P001" parameterMap="P001_MAP" resultClass="hmap" ><![CDATA[/* 프로시저1 */
+{ call SP_SAMPLE_OUT (?,?) }]]>
+	</procedure>
+</sqlMap>

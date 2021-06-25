@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="${__NAMESPACE__}">
+	<select id="S001" parameterClass="map" resultClass="hmap" fetchSize="50"><![CDATA[/* 이력조회 | Administrator(admin), 2018-09-17 20:52:01 */
+SELECT
+        a.ACC_NO AS ACC_NO /*  */ 	
+     ,  a.CRE_DTM AS CRE_DTM /*  */ 	
+     ,  a.KIND AS KIND /*  */ 	
+     ,  a.AMOUNT AS AMOUNT /*  */ 	
+     ,  a.DESCRIPTION AS DESCRIPTION /*  */ 	
+  FROM  TB_CBS_XYZ_ACC_H a
+ WHERE  a.ACC_NO = #ACC_NO#
+order by a.CRE_DTM desc]]>
+	</select>
+	<insert id="I001" parameterClass="map"><![CDATA[/* 이력등록 | Administrator(admin), 2018-09-17 20:52:01 */
+INSERT
+  INTO  TB_CBS_XYZ_ACC_H
+        (ACC_NO /*  */ 	
+        , CRE_DTM /*  */ 	
+        , KIND /*  */ 	
+        , AMOUNT /*  */ 	
+        , DESCRIPTION /*  */ )	
+VALUES  
+        (#ACC_NO#	
+        , #CRE_DTM# 	
+        , #KIND# 	
+        , #AMOUNT# 	
+        , #DESCRIPTION#)]]>
+	</insert>
+	<insert id="I091" parameterClass="map"><![CDATA[/* 이력등록 NOTX | Administrator(admin), 2018-09-17 20:52:25 */
+INSERT
+  INTO  TB_CBS_XYZ_ACC_H_NOTX
+        (ACC_NO
+        , CRE_DTM
+        , KIND
+        , AMOUNT
+        , DESCRIPTION )	
+VALUES  
+        (#ACC_NO#	
+        , #CRE_DTM# 	
+        , #KIND# 	
+        , #AMOUNT# 	
+        , #DESCRIPTION#)]]>
+	</insert>
+</sqlMap>

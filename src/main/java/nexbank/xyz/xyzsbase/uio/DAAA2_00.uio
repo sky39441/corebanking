@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<method-list>
+    <method fixedLength="false" id="s001">
+        <input>
+            <field additional="" formattingType="" id="A" length="10" lengthRef="" name="A" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="B" length="20" lengthRef="" name="B" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="C" length="10" lengthRef="" name="C" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="MM" length="11" lengthRef="" name="MM" padChar="0x30" padType="left" type="bigDecimal" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="LAST_TIME" length="20" lengthRef="" name="LAST_TIME" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+        </input>
+        <output>
+            <field additional="" formattingType="" id="A" length="10" lengthRef="" name="A" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="B" length="20" lengthRef="" name="B" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="C" length="10" lengthRef="" name="C" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="MM" length="11" lengthRef="" name="MM" padChar="0x30" padType="left" type="bigDecimal" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="LAST_TIME" length="20" lengthRef="" name="LAST_TIME" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+        </output>
+    </method>
+    <method fixedLength="false" id="s002">
+        <input/>
+        <output>
+            <recordSet id="LIST" name="AAA2 LIST ALL" recordCount="" recordCountRef="">
+                <field additional="" formattingType="" id="A" length="10" lengthRef="" name="A" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="B" length="20" lengthRef="" name="B" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="C" length="10" lengthRef="" name="C" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="MM" length="11" lengthRef="" name="MM" padChar="0x30" padType="left" type="bigDecimal" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="LAST_TIME" length="20" lengthRef="" name="LAST_TIME" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            </recordSet>
+        </output>
+    </method>
+    <method fixedLength="false" id="i001">
+        <input>
+            <field additional="" formattingType="" id="A" length="10" lengthRef="" name="A" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="B" length="20" lengthRef="" name="B" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="C" length="10" lengthRef="" name="C" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="MM" length="11" lengthRef="" name="MM" padChar="0x30" padType="left" type="bigDecimal" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="LAST_TIME" length="20" lengthRef="" name="LAST_TIME" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+        </input>
+        <output>
+            <field additional="" formattingType="" id="EXPECTED_ROW" length="0" lengthRef="" name="EXPECTED_ROW" padChar="0x30" padType="left" type="int" validationLogic="" validationType=""/>
+        </output>
+    </method>
+    <method fixedLength="false" id="u001">
+        <input>
+            <field additional="" formattingType="" id="A" length="10" lengthRef="" name="A" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="B" length="20" lengthRef="" name="B" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="C" length="10" lengthRef="" name="C" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="MM" length="11" lengthRef="" name="MM" padChar="0x30" padType="left" type="bigDecimal" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="LAST_TIME" length="20" lengthRef="" name="LAST_TIME" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+        </input>
+        <output>
+            <field additional="" formattingType="" id="EXPECTED_ROW" length="0" lengthRef="" name="EXPECTED_ROW" padChar="0x30" padType="left" type="int" validationLogic="" validationType=""/>
+        </output>
+    </method>
+    <method fixedLength="false" id="d001">
+        <input/>
+        <output>
+            <field additional="" formattingType="" id="EXPECTED_ROW" length="0" lengthRef="" name="EXPECTED_ROW" padChar="0x30" padType="left" type="int" validationLogic="" validationType=""/>
+        </output>
+    </method>
+</method-list>

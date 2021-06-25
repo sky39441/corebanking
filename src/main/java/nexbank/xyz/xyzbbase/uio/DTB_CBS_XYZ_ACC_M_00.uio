@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<method-list>
+  <method fixedLength="false" id="i001">
+    <input>
+      <field additional="" formattingType="" id="ACC_NO" length="20" lengthRef="" name="ACC_NO" padChar="" padType="" type=""/>
+      <field additional="" formattingType="" id="ACC_NAME" length="128" lengthRef="" name="ACC_NAME" padChar="" padType="" type=""/>
+      <field additional="" formattingType="" id="ACC_PASSWD" length="4" lengthRef="" name="ACC_PASSWD" padChar="" padType="" type=""/>
+      <field additional="" formattingType="" id="ACC_BALANCE" length="17" lengthRef="" name="ACC_BALANCE" padChar="" padType="" type=""/>
+      <field additional="" formattingType="" id="CRE_DTM" length="17" lengthRef="" name="CRE_DTM" padChar="" padType="" type=""/>
+      <field additional="" formattingType="" id="UPD_DTM" length="17" lengthRef="" name="UPD_DTM" padChar="" padType="" type=""/>
+    </input>
+    <output>
+      <field additional="" formattingType="" id="EXPECTED_ROW" length="0" lengthRef="" name="반영건수" padChar="" padType="" type=""/>
+    </output>
+  </method>
+  <method fixedLength="false" id="s001">
+    <input>
+      <field additional="" formattingType="" id="ACC_NO_LIKE" length="0" lengthRef="" name="검색대상 계좌번호" padChar="" padType="" type=""/>
+    </input>
+    <output/>
+  </method>
+  <method fixedLength="false" id="s002">
+    <input>
+      <field additional="" formattingType="" id="ACC_NO" length="20" lengthRef="" name="ACC_NO" padChar="" padType="" type=""/>
+    </input>
+    <output>
+      <field additional="" formattingType="" id="ACC_NO" length="20" lengthRef="" name="ACC_NO" padChar="" padType="" type=""/>
+      <field additional="" formattingType="" id="ACC_NAME" length="128" lengthRef="" name="ACC_NAME" padChar="" padType="" type=""/>
+      <field additional="" formattingType="" id="ACC_PASSWD" length="4" lengthRef="" name="ACC_PASSWD" padChar="" padType="" type=""/>
+      <field additional="" formattingType="" id="ACC_BALANCE" length="17" lengthRef="" name="ACC_BALANCE" padChar="" padType="" type=""/>
+      <field additional="" formattingType="" id="CRE_DTM" length="17" lengthRef="" name="CRE_DTM" padChar="" padType="" type=""/>
+      <field additional="" formattingType="" id="UPD_DTM" length="17" lengthRef="" name="UPD_DTM" padChar="" padType="" type=""/>
+    </output>
+  </method>
+  <method fixedLength="false" id="u001">
+    <input>
+      <field additional="" formattingType="" id="ACC_NO" length="20" lengthRef="" name="계좌번호" padChar="" padType="" type=""/>
+      <field additional="" formattingType="" id="AMOUNT" length="0" lengthRef="" name="금액" padChar="" padType="" type=""/>
+    </input>
+    <output>
+      <field additional="" formattingType="" id="EXPECTED_ROW" length="0" lengthRef="" name="반영건수" padChar="" padType="" type=""/>
+    </output>
+  </method>
+</method-list>

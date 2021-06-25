@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <Parameters>
+    <Parameter id="ncTrId" type="String">FWK01013</Parameter>
+  </Parameters>
+  <Dataset id="ncFieldMap">
+	<ColumnInfo>
+		<Column id="stringField" type="string" />
+		<Column id="emptyField" type="string" />
+		<Column id="nullField" type="string" />
+		<Column id="intField" type="string" />
+		<Column id="throwBizRuntimeException" type="string" />
+	</ColumnInfo>
+	<Rows>
+		<Row>
+			<Col id="stringField">string</Col>
+			<Col id="intField">100</Col>
+			<Col id="throwBizRuntimeException">false</Col>
+		</Row>
+	</Rows>
+  </Dataset>
+  <Dataset id="recordSet1">
+	<ColumnInfo>
+	    <Column id="colum1" type="String" />
+	    <Column id="colum2" type="String" />
+	    <Column id="colum3" type="String" />
+	</ColumnInfo>
+	<Rows>
+		<Row>
+			<Col id="colum1">11</Col>
+			<Col id="colum2">12</Col>
+			<Col id="colum3">13</Col>
+		</Row>
+		<Row>
+			<Col id="colum1">21</Col>
+			<Col id="colum2">22</Col>
+			<Col id="colum3">23</Col>
+		</Row>
+	</Rows>
+  </Dataset>
+  <Dataset id="recordSet2">
+	<ColumnInfo>
+	    <Column id="colum1" type="String" />
+	    <Column id="colum2" type="String" />
+	    <Column id="colum3" type="String" />
+	</ColumnInfo>
+	<Rows>
+		<Row>
+			<Col id="colum1">11</Col>
+			<Col id="colum2">12</Col>
+			<Col id="colum3">13</Col>
+		</Row>
+		<Row>
+			<Col id="colum1">21</Col>
+			<Col id="colum2">22</Col>
+			<Col id="colum3">23</Col>
+		</Row>
+	</Rows>
+  </Dataset>
+</root>

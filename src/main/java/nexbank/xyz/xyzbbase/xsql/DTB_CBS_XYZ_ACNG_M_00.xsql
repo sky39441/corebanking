@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="${__NAMESPACE__}">
+	<select id="S001" parameterClass="map" resultClass="hmap" fetchSize="50" ><![CDATA[/* 잔고조회 */
+SELECT  b.BR_CD     as BR_CD,
+		b.BR_NAME   as BR_NAME,
+		b.PRD_CD    as PRD_CD,
+		b.PRD_NAME  as PRD_NAME,
+		COALESCE(a.BALANCE, 0)   as BALANCE
+FROM (SELECT BR_CD, BR_NAME, PRD_CD, PRD_NAME FROM TB_CBS_XYZ_BRCD_M bb, TB_CBS_XYZ_PRDCD_M cc) b left outer join (SELECT BR_CD, PRD_CD, SUM(BALANCE) AS BALANCE FROM TB_CBS_XYZ_ACNG_M GROUP BY BR_CD, PRD_CD) a 
+     on b.BR_CD = a.BR_CD and b.PRD_CD = a.PRD_CD
+ORDER BY b.BR_CD, b.PRD_CD]]>
+	</select>
+	<update id="U001" parameterClass="map" ><![CDATA[/* 잔고수정 */
+MERGE INTO TB_CBS_XYZ_ACNG_M A
+  USING DUAL
+    ON (A.BR_CD=#BR_CD# AND A.PRD_CD=#PRD_CD#)
+  WHEN MATCHED THEN
+    UPDATE SET
+    	  BALANCE=BALANCE+#BALANCE#
+    	, UPD_DTM=TO_CHAR(SYSTIMESTAMP, 'YYYYMMDDHH24MISSFF3')
+  WHEN NOT MATCHED THEN
+    INSERT (
+    	  BR_CD
+    	, PRD_CD
+    	, BALANCE
+    	, CRE_DTM
+    	, UPD_DTM
+    ) 
+    VALUES (
+    	  #BR_CD#
+    	, #PRD_CD#
+    	, #BALANCE#
+    	, TO_CHAR(SYSTIMESTAMP, 'YYYYMMDDHH24MISSFF3')
+    	, TO_CHAR(SYSTIMESTAMP, 'YYYYMMDDHH24MISSFF3')
+    )]]>
+	</update>
+</sqlMap>

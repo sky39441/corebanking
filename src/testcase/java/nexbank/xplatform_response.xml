@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+	<Parameters>
+		<Parameter id="ncTrId" type="string">FWK02010</Parameter>
+		<Parameter id="ncReqId" type="string">xxxx</Parameter>
+		<Parameter id="ncStartDate" type="datetime"></Parameter>
+		<Parameter id="ncEndDate" type="datetime"></Parameter>
+		<Parameter id="ncMsgId" type="string">NCOM0000</Parameter>
+		<Parameter id="ncMsg" type="string">정상처리입니다.</Parameter>
+		<Parameter id="ncMsgFlag" type="string">OK</Parameter>
+		<Parameter id="ErrorCode" type="string">0</Parameter>
+		<Parameter id="ErrMsg" type="string">OK</Parameter>
+	</Parameters>
+	<Dataset id="ncFieldMap">
+		<ColumnInfo>
+			<Column id="stringField" type="string" size="255" />
+			<Column id="emptyField" type="string" size="255" />
+			<Column id="nullField" type="string" size="255" />
+			<Column id="intField" type="string" size="255" />
+			<Column id="throwBizRuntimeException" type="string" size="255" />
+		</ColumnInfo>
+		<Rows>
+			<Row>
+				<Col id="stringField">string</Col>
+				<Col id="intField">100</Col>
+				<Col id="throwBizRuntimeException">false</Col>
+			</Row>
+		</Rows>
+	</Dataset>
+	<Dataset id="recordSet1">
+		<ColumnInfo>
+			<Column id="colum1" type="string" size="255" />
+			<Column id="colum2" type="string" size="255" />
+			<Column id="colum3" type="string" size="255" />
+			<Column id="ncRecStatus" type="string" size="255" />
+		</ColumnInfo>
+		<Rows>
+			<Row>
+				<Col id="colum1">11</Col>
+				<Col id="colum2">12</Col>
+				<Col id="colum3">13</Col>
+				<Col id="ncRecStatus">normal</Col>
+			</Row>
+			<Row>
+				<Col id="colum1">21</Col>
+				<Col id="colum2">22</Col>
+				<Col id="colum3">23</Col>
+				<Col id="ncRecStatus">normal</Col>
+			</Row>
+		</Rows>
+	</Dataset>
+	<Dataset id="recordSet2">
+		<ColumnInfo>
+			<Column id="colum1" type="string" size="255" />
+			<Column id="colum2" type="string" size="255" />
+			<Column id="colum3" type="string" size="255" />
+			<Column id="ncRecStatus" type="string" size="255" />
+		</ColumnInfo>
+		<Rows>
+			<Row>
+				<Col id="colum1">11</Col>
+				<Col id="colum2">12</Col>
+				<Col id="colum3">13</Col>
+				<Col id="ncRecStatus">normal</Col>
+			</Row>
+			<Row>
+				<Col id="colum1">21</Col>
+				<Col id="colum2">22</Col>
+				<Col id="colum3">23</Col>
+				<Col id="ncRecStatus">normal</Col>
+			</Row>
+		</Rows>
+	</Dataset>
+</Root>

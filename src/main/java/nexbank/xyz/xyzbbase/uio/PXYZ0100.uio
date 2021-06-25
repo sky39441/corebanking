@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<method-list>
+  <method id="pXYZ01008" fixedLength="true">
+    <input>
+      <field id="ACC_NO" name="계좌번호" type="string" length="20" lengthRef="" padType="right" padChar="0x20" validationType="mandatory" validationLogic="" formattingType="" additional="" />
+    </input>
+    <output />
+  </method>
+  <method id="pXYZ01004" fixedLength="true">
+    <input>
+      <field id="ACC_NO" name="계좌번호" type="string" length="20" lengthRef="" padType="right" padChar="0x20" validationType="mandatory" validationLogic="" formattingType="" additional="" />
+      <field id="PAGE_NO" name="페이지번호" type="int" length="5" lengthRef="" padType="left" padChar="0x30" validationType="optional" validationLogic="" formattingType="" additional="" />
+      <field id="ROW_IN_PAGE" name="페이지당표시건수" type="int" length="5" lengthRef="" padType="left" padChar="0x30" validationType="optional" validationLogic="" formattingType="" additional="" />
+    </input>
+    <output>
+      <field id="ACC_NO" name="계좌번호" type="string" length="20" lengthRef="" padType="right" padChar="0x20" validationType="mandatory" validationLogic="" formattingType="" additional="" />
+      <field id="HAS_NEXT_PAGE" name="다음페이지존재" type="string" length="1" lengthRef="" padType="right" padChar="0x20" validationType="mandatory" validationLogic="" formattingType="" additional="" />
+      <field id="LIST_SIZE" name="이력건수" type="int" length="5" lengthRef="" padType="left" padChar="0x30" validationType="mandatory" validationLogic="" formattingType="" additional="" />
+      <recordSet id="LIST" name="이력목록" recordCount="0" recordCountRef="LIST_SIZE">
+        <field id="ACC_NO" name="ACC_NO" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="CRE_DTM" name="CRE_DTM" type="string" length="17" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="KIND" name="KIND" type="string" length="10" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="AMOUNT" name="AMOUNT" type="long" length="17" lengthRef="" padType="left" padChar="0x30" formattingType="" additional="" />
+        <field id="DESCRIPTION" name="DESCRIPTION" type="string" length="128" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      </recordSet>
+    </output>
+  </method>
+  <method id="pXYZ01007" fixedLength="true">
+    <input>
+      <field id="ACC_NO" name="계좌번호" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="EXCEL_TYPE" name="엑셀버전유형" type="string" length="10" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+    </input>
+    <output />
+  </method>
+  <method id="pXYZ01003" fixedLength="true">
+    <input>
+      <field id="ACC_NO" name="계좌번호" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="ACC_NAME" name="계좌명" type="string" length="128" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="ACC_PASSWD" name="계좌비밀번호" type="string" length="4" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="ACC_BALANCE" name="잔액" type="long" length="17" lengthRef="" padType="left" padChar="0x30" formattingType="" additional="" />
+    </input>
+    <output>
+      <field id="ACC_NO" name="계좌번호" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="ACC_NAME" name="계좌명" type="string" length="128" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="ACC_PASSWD" name="계좌비밀번호" type="string" length="4" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="ACC_BALANCE" name="잔액" type="long" length="17" lengthRef="" padType="left" padChar="0x30" formattingType="" additional="" />
+      <field id="CRE_DTM" name="생성일시" type="string" length="17" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="UPD_DTM" name="수정일시" type="string" length="17" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+    </output>
+  </method>
+  <method id="pXYZ01006" fixedLength="true">
+    <input>
+      <field id="BR_CD" name="부점코드" type="string" length="3" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="PRD_CD" name="상품코드" type="string" length="2" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+    </input>
+    <output>
+      <field id="BR_CD" name="부점코드" type="string" length="3" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="PRD_CD" name="상품코드" type="string" length="2" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="ACC_LIST_SIZE" name="계좌목록사이즈" type="int" length="5" lengthRef="" padType="left" padChar="0x30" formattingType="" additional="" />
+      <field id="BR_LIST_SIZE" name="부점목록사이즈" type="int" length="5" lengthRef="" padType="left" padChar="0x30" formattingType="" additional="" />
+      <field id="PRD_LIST_SIZE" name="상품목록사이즈" type="int" length="5" lengthRef="" padType="left" padChar="0x30" formattingType="" additional="" />
+      <recordSet id="ACC_LIST" name="계좌목록" recordCount="0" recordCountRef="ACC_LIST_SIZE">
+        <field id="ACC_NO" name="ACC_NO" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="ACC_NAME" name="ACC_NAME" type="string" length="128" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="ACC_BALANCE" name="ACC_BALANCE" type="long" length="17" lengthRef="" padType="left" padChar="0x30" formattingType="" additional="" />
+        <field id="CRE_DTM" name="CRE_DTM" type="string" length="17" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="UPD_DTM" name="UPD_DTM" type="string" length="17" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      </recordSet>
+      <recordSet id="BR_LIST" name="부점목록" recordCount="0" recordCountRef="BR_LIST_SIZE">
+        <field id="BR_CD" name="부점코드" type="string" length="3" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="BR_NAME" name="부점명" type="string" length="128" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      </recordSet>
+      <recordSet id="PRD_LIST" name="상품목록" recordCount="0" recordCountRef="PRD_LIST_SIZE">
+        <field id="PRD_CD" name="상품코드" type="string" length="2" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="PRD_NAME" name="상품명" type="string" length="128" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      </recordSet>
+    </output>
+  </method>
+  <method id="pXYZ01001" fixedLength="true">
+    <input>
+      <field id="BR_CD" name="부점코드" type="string" length="3" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="PRD_CD" name="상품코드" type="string" length="2" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+    </input>
+    <output>
+      <field id="BR_CD" name="부점코드" type="string" length="3" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="PRD_CD" name="상품코드" type="string" length="2" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="ACC_LIST_SIZE" name="계좌목록사이즈" type="int" length="5" lengthRef="" padType="left" padChar="0x30" formattingType="" additional="" />
+      <field id="BR_LIST_SIZE" name="부점목록사이즈" type="int" length="5" lengthRef="" padType="left" padChar="0x30" formattingType="" additional="" />
+      <field id="PRD_LIST_SIZE" name="상품목록사이즈" type="int" length="5" lengthRef="" padType="left" padChar="0x30" formattingType="" additional="" />
+      <recordSet id="ACC_LIST" name="계좌목록" recordCount="0" recordCountRef="ACC_LIST_SIZE">
+        <field id="ACC_NO" name="ACC_NO" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="ACC_NAME" name="ACC_NAME" type="string" length="128" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="ACC_BALANCE" name="ACC_BALANCE" type="long" length="17" lengthRef="" padType="left" padChar="0x30" formattingType="" additional="" />
+        <field id="CRE_DTM" name="CRE_DTM" type="string" length="17" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="UPD_DTM" name="UPD_DTM" type="string" length="17" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      </recordSet>
+      <recordSet id="BR_LIST" name="부점목록" recordCount="0" recordCountRef="BR_LIST_SIZE">
+        <field id="BR_CD" name="부점코드" type="string" length="3" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="BR_NAME" name="부점명" type="string" length="128" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      </recordSet>
+      <recordSet id="PRD_LIST" name="상품목록" recordCount="0" recordCountRef="PRD_LIST_SIZE">
+        <field id="PRD_CD" name="상품코드" type="string" length="2" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="PRD_NAME" name="상품명" type="string" length="128" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      </recordSet>
+    </output>
+  </method>
+  <method id="pXYZ01002" fixedLength="true">
+    <input>
+      <field id="ACC_NO" name="계좌번호" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+    </input>
+    <output>
+      <field id="ACC_NO" name="ACC_NO" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="ACC_NAME" name="ACC_NAME" type="string" length="128" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="ACC_PASSWD" name="ACC_PASSWD" type="string" length="4" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="ACC_BALANCE" name="ACC_BALANCE" type="long" length="17" lengthRef="" padType="left" padChar="0x30" formattingType="" additional="" />
+      <field id="CRE_DTM" name="CRE_DTM" type="string" length="17" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="UPD_DTM" name="UPD_DTM" type="string" length="17" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+    </output>
+  </method>
+  <method id="pXYZ01005" fixedLength="true">
+    <input />
+    <output>
+      <field id="LIST_SIZE" name="목록사이즈" type="int" length="5" lengthRef="" padType="left" padChar="0x30" formattingType="" additional="" />
+      <recordSet id="LIST" name="목록" recordCount="0" recordCountRef="LIST_SIZE">
+        <field id="BR_CD" name="부점코드" type="string" length="3" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="BR_NAME" name="부점명" type="string" length="128" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="PRD_CD" name="상품코드" type="string" length="2" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="PRD_NAME" name="상품명" type="string" length="128" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="BALANCE" name="잔고" type="long" length="17" lengthRef="" padType="left" padChar="0x30" formattingType="" additional="" />
+      </recordSet>
+    </output>
+  </method>
+</method-list>
+

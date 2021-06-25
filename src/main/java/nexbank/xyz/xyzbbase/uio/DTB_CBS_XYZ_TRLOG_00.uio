@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<method-list>
+    <method fixedLength="false" id="s001">
+        <input>
+            <field additional="" formattingType="" id="TX_IX" length="100" lengthRef="" name="TX_IX" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="TX_KIND" length="10" lengthRef="" name="TX_KIND" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="AMOUNT" length="20" lengthRef="" name="AMOUNT" padChar="0x30" padType="left" type="bigDecimal" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="TX_DATETIME" length="20" lengthRef="" name="TX_DATETIME" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ACC_NO1" length="20" lengthRef="" name="ACC_NO1" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ACC_NO2" length="20" lengthRef="" name="ACC_NO2" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="DESC_1" length="100" lengthRef="" name="DESC_1" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="DESC_2" length="100" lengthRef="" name="DESC_2" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+        </input>
+        <output>
+            <field additional="" formattingType="" id="TX_IX" length="100" lengthRef="" name="TX_IX" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="TX_KIND" length="10" lengthRef="" name="TX_KIND" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="AMOUNT" length="20" lengthRef="" name="AMOUNT" padChar="0x30" padType="left" type="bigDecimal" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="TX_DATETIME" length="20" lengthRef="" name="TX_DATETIME" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ACC_NO1" length="20" lengthRef="" name="ACC_NO1" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ACC_NO2" length="20" lengthRef="" name="ACC_NO2" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="DESC_1" length="100" lengthRef="" name="DESC_1" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="DESC_2" length="100" lengthRef="" name="DESC_2" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+        </output>
+    </method>
+    <method fixedLength="false" id="s002">
+        <input/>
+        <output>
+            <recordSet id="LIST" name="TB_CBS_XYZ_TRLOG LIST ALL" recordCount="" recordCountRef="">
+                <field additional="" formattingType="" id="TX_IX" length="100" lengthRef="" name="TX_IX" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="TX_KIND" length="10" lengthRef="" name="TX_KIND" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="AMOUNT" length="20" lengthRef="" name="AMOUNT" padChar="0x30" padType="left" type="bigDecimal" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="TX_DATETIME" length="20" lengthRef="" name="TX_DATETIME" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="ACC_NO1" length="20" lengthRef="" name="ACC_NO1" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="ACC_NO2" length="20" lengthRef="" name="ACC_NO2" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="DESC_1" length="100" lengthRef="" name="DESC_1" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="DESC_2" length="100" lengthRef="" name="DESC_2" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            </recordSet>
+        </output>
+    </method>
+    <method fixedLength="false" id="s003">
+        <input>
+            <field additional="" formattingType="" id="TX_IX" length="100" lengthRef="" name="TX_IX" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="TX_KIND" length="10" lengthRef="" name="TX_KIND" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="AMOUNT" length="20" lengthRef="" name="AMOUNT" padChar="0x30" padType="left" type="bigDecimal" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="TX_DATETIME" length="20" lengthRef="" name="TX_DATETIME" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ACC_NO1" length="20" lengthRef="" name="ACC_NO1" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ACC_NO2" length="20" lengthRef="" name="ACC_NO2" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="DESC_1" length="100" lengthRef="" name="DESC_1" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="DESC_2" length="100" lengthRef="" name="DESC_2" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+        </input>
+        <output>
+            <field additional="" formattingType="" id="TX_IX" length="100" lengthRef="" name="TX_IX" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="TX_KIND" length="10" lengthRef="" name="TX_KIND" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="AMOUNT" length="20" lengthRef="" name="AMOUNT" padChar="0x30" padType="left" type="bigDecimal" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="TX_DATETIME" length="20" lengthRef="" name="TX_DATETIME" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ACC_NO1" length="20" lengthRef="" name="ACC_NO1" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ACC_NO2" length="20" lengthRef="" name="ACC_NO2" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="DESC_1" length="100" lengthRef="" name="DESC_1" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="DESC_2" length="100" lengthRef="" name="DESC_2" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+        </output>
+    </method>
+    <method fixedLength="false" id="i001">
+        <input>
+            <field additional="" formattingType="" id="TX_IX" length="100" lengthRef="" name="TX_IX" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="TX_KIND" length="10" lengthRef="" name="TX_KIND" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="AMOUNT" length="20" lengthRef="" name="AMOUNT" padChar="0x30" padType="left" type="bigDecimal" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="TX_DATETIME" length="20" lengthRef="" name="TX_DATETIME" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ACC_NO1" length="20" lengthRef="" name="ACC_NO1" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ACC_NO2" length="20" lengthRef="" name="ACC_NO2" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="DESC_1" length="100" lengthRef="" name="DESC_1" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="DESC_2" length="100" lengthRef="" name="DESC_2" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+        </input>
+        <output>
+            <field additional="" formattingType="" id="EXPECTED_ROW" length="0" lengthRef="" name="EXPECTED_ROW" padChar="0x30" padType="left" type="int" validationLogic="" validationType=""/>
+        </output>
+    </method>
+    <method fixedLength="false" id="u001">
+        <input>
+            <field additional="" formattingType="" id="TX_IX" length="100" lengthRef="" name="TX_IX" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="TX_KIND" length="10" lengthRef="" name="TX_KIND" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="AMOUNT" length="20" lengthRef="" name="AMOUNT" padChar="0x30" padType="left" type="bigDecimal" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="TX_DATETIME" length="20" lengthRef="" name="TX_DATETIME" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ACC_NO1" length="20" lengthRef="" name="ACC_NO1" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ACC_NO2" length="20" lengthRef="" name="ACC_NO2" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="DESC_1" length="100" lengthRef="" name="DESC_1" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="DESC_2" length="100" lengthRef="" name="DESC_2" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+        </input>
+        <output>
+            <field additional="" formattingType="" id="EXPECTED_ROW" length="0" lengthRef="" name="EXPECTED_ROW" padChar="0x30" padType="left" type="int" validationLogic="" validationType=""/>
+        </output>
+    </method>
+    <method fixedLength="false" id="d001">
+        <input/>
+        <output>
+            <field additional="" formattingType="" id="EXPECTED_ROW" length="0" lengthRef="" name="EXPECTED_ROW" padChar="0x30" padType="left" type="int" validationLogic="" validationType=""/>
+        </output>
+    </method>
+</method-list>

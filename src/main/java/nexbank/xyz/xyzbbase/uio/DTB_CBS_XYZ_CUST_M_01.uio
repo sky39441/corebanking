@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<method-list>
+    <method fixedLength="false" id="s001">
+        <input>
+            <field additional="" formattingType="" id="ID" length="40" lengthRef="" name="아이디" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+        </input>
+        <output>
+            <field additional="" formattingType="" id="ID" length="40" lengthRef="" name="아이디" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="NAME" length="20" lengthRef="" name="한글명" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ENG_NAME" length="20" lengthRef="" name="영문명" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="BIRTHDAY" length="8" lengthRef="" name="생년월일" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="CUSTOMER_TYPE" length="20" lengthRef="" name="고객타입" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="CELLPHONE" length="20" lengthRef="" name="휴대전화" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="EMAIL" length="50" lengthRef="" name="이메일" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="POSTAL_CODE" length="20" lengthRef="" name="우편번호" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ADDRESS" length="256" lengthRef="" name="자택주소" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ADDRESS_DETAIL" length="256" lengthRef="" name="상세주소" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="HOME_PHONE" length="20" lengthRef="" name="자택전화" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="COMPANY" length="50" lengthRef="" name="직장명" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="DEPARTMENT" length="50" lengthRef="" name="부서명" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="POSITION" length="20" lengthRef="" name="직위" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="COMPANY_PHONE" length="20" lengthRef="" name="직장전화" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="BLOOD_TYPE" length="2" lengthRef="" name="혈액형" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="RELIGION" length="20" lengthRef="" name="종교" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="HOBBY" length="50" lengthRef="" name="취미" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="WEDDING_ANNIVERSARY" length="8" lengthRef="" name="결혼기념일" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="INCOME_FOR_YEAR" length="22" lengthRef="" name="연수입" padChar="0x30" padType="left" type="bigDecimal" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="SAVING_FOR_MONTH" length="22" lengthRef="" name="월저축" padChar="0x30" padType="left" type="bigDecimal" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="CREATED_DATE" length="14" lengthRef="" name="등록일" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="MODIFIED_DATE" length="14" lengthRef="" name="수정일" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="NOTES" length="1000" lengthRef="" name="비고" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+        </output>
+    </method>
+    <method fixedLength="false" id="s002">
+        <input/>
+        <output>
+            <recordSet id="LIST" name="고객정보 LIST ALL" recordCount="" recordCountRef="">
+                <field additional="" formattingType="" id="ID" length="40" lengthRef="" name="아이디" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="NAME" length="20" lengthRef="" name="한글명" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="ENG_NAME" length="20" lengthRef="" name="영문명" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="BIRTHDAY" length="8" lengthRef="" name="생년월일" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="CUSTOMER_TYPE" length="20" lengthRef="" name="고객타입" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="CELLPHONE" length="20" lengthRef="" name="휴대전화" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="EMAIL" length="50" lengthRef="" name="이메일" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="POSTAL_CODE" length="20" lengthRef="" name="우편번호" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="ADDRESS" length="256" lengthRef="" name="자택주소" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="ADDRESS_DETAIL" length="256" lengthRef="" name="상세주소" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="HOME_PHONE" length="20" lengthRef="" name="자택전화" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="COMPANY" length="50" lengthRef="" name="직장명" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="DEPARTMENT" length="50" lengthRef="" name="부서명" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="POSITION" length="20" lengthRef="" name="직위" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="COMPANY_PHONE" length="20" lengthRef="" name="직장전화" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="BLOOD_TYPE" length="2" lengthRef="" name="혈액형" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="RELIGION" length="20" lengthRef="" name="종교" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="HOBBY" length="50" lengthRef="" name="취미" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="WEDDING_ANNIVERSARY" length="8" lengthRef="" name="결혼기념일" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="INCOME_FOR_YEAR" length="22" lengthRef="" name="연수입" padChar="0x30" padType="left" type="bigDecimal" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="SAVING_FOR_MONTH" length="22" lengthRef="" name="월저축" padChar="0x30" padType="left" type="bigDecimal" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="CREATED_DATE" length="14" lengthRef="" name="등록일" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="MODIFIED_DATE" length="14" lengthRef="" name="수정일" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="NOTES" length="1000" lengthRef="" name="비고" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            </recordSet>
+        </output>
+    </method>
+    <method fixedLength="false" id="s003">
+        <input>
+            <field additional="" formattingType="" id="ID" length="40" lengthRef="" name="아이디" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+        </input>
+        <output>
+            <field additional="" formattingType="" id="ID" length="40" lengthRef="" name="아이디" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="NAME" length="20" lengthRef="" name="한글명" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ENG_NAME" length="20" lengthRef="" name="영문명" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="BIRTHDAY" length="8" lengthRef="" name="생년월일" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="CUSTOMER_TYPE" length="20" lengthRef="" name="고객타입" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="CELLPHONE" length="20" lengthRef="" name="휴대전화" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="EMAIL" length="50" lengthRef="" name="이메일" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="POSTAL_CODE" length="20" lengthRef="" name="우편번호" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ADDRESS" length="256" lengthRef="" name="자택주소" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ADDRESS_DETAIL" length="256" lengthRef="" name="상세주소" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="HOME_PHONE" length="20" lengthRef="" name="자택전화" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="COMPANY" length="50" lengthRef="" name="직장명" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="DEPARTMENT" length="50" lengthRef="" name="부서명" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="POSITION" length="20" lengthRef="" name="직위" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="COMPANY_PHONE" length="20" lengthRef="" name="직장전화" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="BLOOD_TYPE" length="2" lengthRef="" name="혈액형" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="RELIGION" length="20" lengthRef="" name="종교" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="HOBBY" length="50" lengthRef="" name="취미" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="WEDDING_ANNIVERSARY" length="8" lengthRef="" name="결혼기념일" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="INCOME_FOR_YEAR" length="22" lengthRef="" name="연수입" padChar="0x30" padType="left" type="bigDecimal" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="SAVING_FOR_MONTH" length="22" lengthRef="" name="월저축" padChar="0x30" padType="left" type="bigDecimal" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="CREATED_DATE" length="14" lengthRef="" name="등록일" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="MODIFIED_DATE" length="14" lengthRef="" name="수정일" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="NOTES" length="1000" lengthRef="" name="비고" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+        </output>
+    </method>
+    <method fixedLength="false" id="i001">
+        <input>
+            <field additional="" formattingType="" id="ID" length="40" lengthRef="" name="아이디" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="NAME" length="20" lengthRef="" name="한글명" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ENG_NAME" length="20" lengthRef="" name="영문명" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="BIRTHDAY" length="8" lengthRef="" name="생년월일" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="CUSTOMER_TYPE" length="20" lengthRef="" name="고객타입" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="CELLPHONE" length="20" lengthRef="" name="휴대전화" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="EMAIL" length="50" lengthRef="" name="이메일" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="POSTAL_CODE" length="20" lengthRef="" name="우편번호" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ADDRESS" length="256" lengthRef="" name="자택주소" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ADDRESS_DETAIL" length="256" lengthRef="" name="상세주소" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="HOME_PHONE" length="20" lengthRef="" name="자택전화" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="COMPANY" length="50" lengthRef="" name="직장명" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="DEPARTMENT" length="50" lengthRef="" name="부서명" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="POSITION" length="20" lengthRef="" name="직위" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="COMPANY_PHONE" length="20" lengthRef="" name="직장전화" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="BLOOD_TYPE" length="2" lengthRef="" name="혈액형" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="RELIGION" length="20" lengthRef="" name="종교" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="HOBBY" length="50" lengthRef="" name="취미" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="WEDDING_ANNIVERSARY" length="8" lengthRef="" name="결혼기념일" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="INCOME_FOR_YEAR" length="22" lengthRef="" name="연수입" padChar="0x30" padType="left" type="bigDecimal" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="SAVING_FOR_MONTH" length="22" lengthRef="" name="월저축" padChar="0x30" padType="left" type="bigDecimal" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="CREATED_DATE" length="14" lengthRef="" name="등록일" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="MODIFIED_DATE" length="14" lengthRef="" name="수정일" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="NOTES" length="1000" lengthRef="" name="비고" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+        </input>
+        <output>
+            <field additional="" formattingType="" id="EXPECTED_ROW" length="0" lengthRef="" name="EXPECTED_ROW" padChar="0x30" padType="left" type="int" validationLogic="" validationType=""/>
+        </output>
+    </method>
+    <method fixedLength="false" id="u001">
+        <input>
+            <field additional="" formattingType="" id="ID" length="40" lengthRef="" name="아이디" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="NAME" length="20" lengthRef="" name="한글명" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ENG_NAME" length="20" lengthRef="" name="영문명" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="BIRTHDAY" length="8" lengthRef="" name="생년월일" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="CUSTOMER_TYPE" length="20" lengthRef="" name="고객타입" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="CELLPHONE" length="20" lengthRef="" name="휴대전화" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="EMAIL" length="50" lengthRef="" name="이메일" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="POSTAL_CODE" length="20" lengthRef="" name="우편번호" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ADDRESS" length="256" lengthRef="" name="자택주소" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ADDRESS_DETAIL" length="256" lengthRef="" name="상세주소" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="HOME_PHONE" length="20" lengthRef="" name="자택전화" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="COMPANY" length="50" lengthRef="" name="직장명" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="DEPARTMENT" length="50" lengthRef="" name="부서명" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="POSITION" length="20" lengthRef="" name="직위" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="COMPANY_PHONE" length="20" lengthRef="" name="직장전화" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="BLOOD_TYPE" length="2" lengthRef="" name="혈액형" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="RELIGION" length="20" lengthRef="" name="종교" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="HOBBY" length="50" lengthRef="" name="취미" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="WEDDING_ANNIVERSARY" length="8" lengthRef="" name="결혼기념일" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="INCOME_FOR_YEAR" length="22" lengthRef="" name="연수입" padChar="0x30" padType="left" type="bigDecimal" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="SAVING_FOR_MONTH" length="22" lengthRef="" name="월저축" padChar="0x30" padType="left" type="bigDecimal" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="CREATED_DATE" length="14" lengthRef="" name="등록일" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="MODIFIED_DATE" length="14" lengthRef="" name="수정일" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="NOTES" length="1000" lengthRef="" name="비고" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+        </input>
+        <output>
+            <field additional="" formattingType="" id="EXPECTED_ROW" length="0" lengthRef="" name="EXPECTED_ROW" padChar="0x30" padType="left" type="int" validationLogic="" validationType=""/>
+        </output>
+    </method>
+    <method fixedLength="false" id="d001">
+        <input>
+            <field additional="" formattingType="" id="ID" length="40" lengthRef="" name="아이디" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+        </input>
+        <output>
+            <field additional="" formattingType="" id="EXPECTED_ROW" length="0" lengthRef="" name="EXPECTED_ROW" padChar="0x30" padType="left" type="int" validationLogic="" validationType=""/>
+        </output>
+    </method>
+</method-list>

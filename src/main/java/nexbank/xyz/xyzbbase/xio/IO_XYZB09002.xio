@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xio>
+	<fixedLength>true</fixedLength>
+	<name>샘플전문2-FixedLength</name>
+	<description>샘플전문1-FixedLength</description>
+	<layout>
+		<field id="stringField" name="문자 필드" type="string" length="20" lengthRef="" padType="left"  padChar="0x20" />
+		<field id="intField"    name="정수 필드" type="string" length="05" lengthRef="" padType="right" padChar="0x30" />
+		<recordSet id="recordSet1" name="레코드셋1" recordCount="0" recordCountRef="intField" >
+			<field id="col1" name="컬럼1" type="string" length="10" lengthRef="" padType="left"  padChar="0x20" />
+			<field id="col2" name="컬럼2" type="string" length="10" lengthRef="" padType="left"  padChar="0x20" />
+		</recordSet>
+	</layout>
+</xio>

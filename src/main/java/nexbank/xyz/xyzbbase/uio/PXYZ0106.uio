@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<method-list>
+    <method fixedLength="false" id="pXYZ01601">
+        <input>
+            <field additional="" formattingType="" id="BR_CD" length="3" lengthRef="" name="부점코드" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="PRD_CD" length="2" lengthRef="" name="상품코드" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+        </input>
+        <output>
+            <field additional="" formattingType="" id="BR_CD" length="3" lengthRef="" name="부점코드" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="PRD_CD" length="2" lengthRef="" name="상품코드" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ACC_LIST_SIZE" length="5" lengthRef="" name="계좌목록사이즈" padChar="0x30" padType="left" type="int" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="BR_LIST_SIZE" length="5" lengthRef="" name="부점목록사이즈" padChar="0x30" padType="left" type="int" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="PRD_LIST_SIZE" length="5" lengthRef="" name="상품목록사이즈" padChar="0x30" padType="left" type="int" validationLogic="" validationType=""/>
+            <recordSet id="ACC_LIST" name="계좌목록" recordCount="0" recordCountRef="ACC_LIST_SIZE">
+                <field additional="" formattingType="" id="ACC_NO" length="20" lengthRef="" name="ACC_NO" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="ACC_NAME" length="128" lengthRef="" name="ACC_NAME" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="ACC_BALANCE" length="17" lengthRef="" name="ACC_BALANCE" padChar="0x30" padType="left" type="long" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="CRE_DTM" length="17" lengthRef="" name="CRE_DTM" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="UPD_DTM" length="17" lengthRef="" name="UPD_DTM" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            </recordSet>
+            <recordSet id="BR_LIST" name="부점목록" recordCount="0" recordCountRef="BR_LIST_SIZE">
+                <field additional="" formattingType="" id="BR_CD" length="3" lengthRef="" name="부점코드" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="BR_NAME" length="128" lengthRef="" name="부점명" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            </recordSet>
+            <recordSet id="PRD_LIST" name="상품목록" recordCount="0" recordCountRef="PRD_LIST_SIZE">
+                <field additional="" formattingType="" id="PRD_CD" length="2" lengthRef="" name="상품코드" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="PRD_NAME" length="128" lengthRef="" name="상품명" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            </recordSet>
+        </output>
+    </method>
+    <method fixedLength="false" id="pXYZ01602">
+        <input>
+            <field additional="" formattingType="" id="ACC_NO" length="20" lengthRef="" name="계좌번호" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+        </input>
+        <output>
+            <field additional="" formattingType="" id="ACC_NO" length="20" lengthRef="" name="ACC_NO" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ACC_NAME" length="128" lengthRef="" name="ACC_NAME" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ACC_PASSWD" length="4" lengthRef="" name="ACC_PASSWD" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ACC_BALANCE" length="17" lengthRef="" name="ACC_BALANCE" padChar="0x30" padType="left" type="long" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="CRE_DTM" length="17" lengthRef="" name="CRE_DTM" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="UPD_DTM" length="17" lengthRef="" name="UPD_DTM" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+        </output>
+    </method>
+    <method fixedLength="false" id="pXYZ01603">
+        <input>
+            <field additional="" formattingType="" id="ACC_NO" length="20" lengthRef="" name="계좌번호" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ACC_NAME" length="128" lengthRef="" name="계좌명" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ACC_PASSWD" length="4" lengthRef="" name="계좌비밀번호" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ACC_BALANCE" length="17" lengthRef="" name="잔액" padChar="0x30" padType="left" type="long" validationLogic="" validationType=""/>
+        </input>
+        <output>
+            <field additional="" formattingType="" id="ACC_NO" length="20" lengthRef="" name="계좌번호" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ACC_NAME" length="128" lengthRef="" name="계좌명" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ACC_PASSWD" length="4" lengthRef="" name="계좌비밀번호" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ACC_BALANCE" length="17" lengthRef="" name="잔액" padChar="0x30" padType="left" type="long" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="CRE_DTM" length="17" lengthRef="" name="생성일시" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="UPD_DTM" length="17" lengthRef="" name="수정일시" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+        </output>
+    </method>
+</method-list>

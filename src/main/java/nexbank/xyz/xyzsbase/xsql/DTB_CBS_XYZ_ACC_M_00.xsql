@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="${__NAMESPACE__}">
+	<select id="s001" parameterClass="map" resultClass="hmap" fetchSize="50"><![CDATA[/* 샘플 - 계좌 원장 SELECT | admin (Administrator), 2021-03-16 14:09:32 */
+SELECT
+       a.ACC_NO      AS ACC_NO      /* 계좌번호 */ 
+     , a.ACC_NAME    AS ACC_NAME    /* 계좌명 */ 
+     , a.ACC_PASSWD  AS ACC_PASSWD  /* 계좌비밀번호 */ 
+     , a.ACC_BALANCE AS ACC_BALANCE /* 계좌잔액 */ 
+     , a.CRE_DTM     AS CRE_DTM     /* 계좌생성일시 */ 
+     , a.UPD_DTM     AS UPD_DTM     /* 계좌수정일시 */ 
+  FROM TB_CBS_XYZ_ACC_M a /* 샘플 - 계좌 원장 */ 
+ WHERE a.ACC_NO = #ACC_NO#]]>
+	</select>
+	<select id="s002" parameterClass="map" resultClass="hmap" fetchSize="50"><![CDATA[/* 샘플 - 계좌 원장 SELECT ALL | admin (Administrator), 2021-03-16 14:09:32 */
+SELECT
+       a.ACC_NO      AS ACC_NO      /* 계좌번호 */ 
+     , a.ACC_NAME    AS ACC_NAME    /* 계좌명 */ 
+     , a.ACC_PASSWD  AS ACC_PASSWD  /* 계좌비밀번호 */ 
+     , a.ACC_BALANCE AS ACC_BALANCE /* 계좌잔액 */ 
+     , a.CRE_DTM     AS CRE_DTM     /* 계좌생성일시 */ 
+     , a.UPD_DTM     AS UPD_DTM     /* 계좌수정일시 */ 
+  FROM TB_CBS_XYZ_ACC_M a /* 샘플 - 계좌 원장 */ 
+ WHERE a.ACC_NO = #ACC_NO#]]>
+	</select>
+	<insert id="i001" parameterClass="map"><![CDATA[/* 샘플 - 계좌 원장 INSERT | admin (Administrator), 2021-03-16 14:09:32 */
+INSERT
+  INTO TB_CBS_XYZ_ACC_M
+      ( ACC_NO      /* 계좌번호 */ 	
+      , ACC_NAME    /* 계좌명 */ 	
+      , ACC_PASSWD  /* 계좌비밀번호 */ 	
+      , ACC_BALANCE /* 계좌잔액 */ 	
+      , CRE_DTM     /* 계좌생성일시 */ 	
+      , UPD_DTM     /* 계좌수정일시 */ )	
+VALUES
+      ( #ACC_NO#	
+      , #ACC_NAME# 	
+      , #ACC_PASSWD# 	
+      , #ACC_BALANCE# 	
+      , #CRE_DTM# 	
+      , #UPD_DTM#)]]>
+	</insert>
+	<update id="u001" parameterClass="map"><![CDATA[/* 샘플 - 계좌 원장 UPDATE | admin (Administrator), 2021-03-16 14:09:32 */
+UPDATE TB_CBS_XYZ_ACC_M
+   SET ACC_NAME    = #ACC_NAME#    /* 계좌명 */ 
+     , ACC_PASSWD  = #ACC_PASSWD#  /* 계좌비밀번호 */ 
+     , ACC_BALANCE = #ACC_BALANCE# /* 계좌잔액 */ 
+     , CRE_DTM     = #CRE_DTM#     /* 계좌생성일시 */ 
+     , UPD_DTM     = #UPD_DTM#     /* 계좌수정일시 */ 
+ WHERE ACC_NO = #ACC_NO#]]>
+	</update>
+	<delete id="d001" parameterClass="map"><![CDATA[/* 샘플 - 계좌 원장 DELETE | admin (Administrator), 2021-03-16 14:09:32 */
+DELETE
+  FROM TB_CBS_XYZ_ACC_M
+ WHERE ACC_NO = #ACC_NO# /* 계좌번호 */ ]]>
+	</delete>
+</sqlMap>

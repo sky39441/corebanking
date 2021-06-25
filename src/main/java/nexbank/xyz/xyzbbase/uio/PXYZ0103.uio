@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<method-list>
+  <method id="pXYZ01312" fixedLength="true">
+    <input>
+      <field id="INPUT_DATA" name="입력전문" type="binary" length="-99" lengthRef="" padType="" padChar="" formattingType="" additional="" />
+    </input>
+    <output />
+  </method>
+  <method id="pXYZ01310" fixedLength="true">
+    <input>
+      <dataSet id="WITHDRAW" name="출금정보">
+	      <field id="ACC_NO" name="출금계좌번호" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+	      <field id="ACC_PASSWD" name="출금계좌비밀번호" type="string" length="4" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+	      <field id="DESCRIPTION" name="출금계좌메시지" type="string" length="128" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      </dataSet>
+      <dataSet id="DEPOSIT" name="입금정보">
+	      <field id="BANK_NO" name="입금은행번호" type="string" length="4" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+	      <field id="ACC_NO" name="입금계좌번호" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+	      <field id="DESCRIPTION" name="입금계좌메시지" type="string" length="128" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      </dataSet>
+      <field id="AMOUNT" name="금액" type="long" length="17" lengthRef="" padType="left" padChar="0x30" formattingType="" additional="" />
+      <field id="TIMEOUT_YN" name="타임아웃발생여부" type="string" length="1" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+    </input>
+    <output />
+  </method>
+  <method id="pXYZ01301" fixedLength="true">
+    <input>
+      <dataSet id="WITHDRAW" name="출금정보">
+	      <field id="ACC_NO" name="출금계좌번호" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+	      <field id="ACC_PASSWD" name="출금계좌비밀번호" type="string" length="4" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+	      <field id="DESCRIPTION" name="출금계좌메시지" type="string" length="128" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      </dataSet>
+      <dataSet id="DEPOSIT" name="입금정보">
+	      <field id="ACC_NO" name="입금계좌번호" type="string" length="20" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+	      <field id="DESCRIPTION" name="입금계좌메시지" type="string" length="128" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      </dataSet>
+      <field id="AMOUNT" name="금액" type="long" length="17" lengthRef="" padType="left" padChar="0x30" formattingType="" additional="" />
+    </input>
+    <output />
+  </method>
+</method-list>
+

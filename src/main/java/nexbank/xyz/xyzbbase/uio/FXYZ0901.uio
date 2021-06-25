@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<method-list>
+  <method id="callEai" fixedLength="false">
+    <input>
+      <field id="field1" name="필드1" type="" length="10" lengthRef="" padType="" padChar="" formattingType="" additional="" />
+      <field id="field2" name="필드2" type="" length="10" lengthRef="" padType="" padChar="" formattingType="" additional="" />
+    </input>
+    <output />
+  </method>
+</method-list>
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<method-list>
+    <method fixedLength="false" id="s001">
+        <input>
+            <field additional="" formattingType="" id="ACC_NO" length="20" lengthRef="" name="ACC_NO" padChar="" padType="" type="" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="PAGE_NO" length="" lengthRef="" name="페이지 번호" padChar="" padType="" type="" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="ROW_IN_PAGE" length="" lengthRef="" name="페이지당 건수" padChar="" padType="" type="" validationLogic="" validationType=""/>
+        </input>
+        <output>
+            <recordSet id="LIST" name="목록" recordCount="" recordCountRef="">
+                <field additional="" formattingType="" id="ACC_NO" length="20" lengthRef="" name="계좌번호" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="CRE_DTM" length="17" lengthRef="" name="생성일시" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="KIND" length="10" lengthRef="" name="처리구분" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="AMOUNT" length="17" lengthRef="" name="금액" padChar="0x30" padType="left" type="long" validationLogic="" validationType=""/>
+                <field additional="" formattingType="" id="DESCRIPTION" length="128" lengthRef="" name="설명" padChar="0x20" padType="right" type="string" validationLogic="" validationType=""/>
+            </recordSet>
+        </output>
+    </method>
+    <method fixedLength="false" id="i001">
+        <input>
+            <field additional="" formattingType="" id="ACC_NO" length="20" lengthRef="" name="ACC_NO" padChar="" padType="" type="" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="KIND" length="10" lengthRef="" name="KIND" padChar="" padType="" type="" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="AMOUNT" length="17" lengthRef="" name="AMOUNT" padChar="" padType="" type="" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="DESCRIPTION" length="128" lengthRef="" name="DESCRIPTION" padChar="" padType="" type="" validationLogic="" validationType=""/>
+        </input>
+        <output>
+            <field additional="" formattingType="" id="EXPECTED_ROW" length="0" lengthRef="" name="반영건수" padChar="" padType="" type="" validationLogic="" validationType=""/>
+        </output>
+    </method>
+    <method fixedLength="false" id="s002">
+        <input>
+            <field additional="" formattingType="" id="ACC_NO" length="0" lengthRef="" name="계좌번호" padChar="" padType="" type="" validationLogic="" validationType=""/>
+        </input>
+        <output/>
+    </method>
+    <method fixedLength="false" id="i002">
+        <input/>
+        <output/>
+    </method>
+<method fixedLength="false" id="i091">
+        <input>
+            <field additional="" formattingType="" id="ACC_NO" length="20" lengthRef="" name="ACC_NO" padChar="" padType="" type="" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="KIND" length="10" lengthRef="" name="KIND" padChar="" padType="" type="" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="AMOUNT" length="17" lengthRef="" name="AMOUNT" padChar="" padType="" type="" validationLogic="" validationType=""/>
+            <field additional="" formattingType="" id="DESCRIPTION" length="128" lengthRef="" name="DESCRIPTION" padChar="" padType="" type="" validationLogic="" validationType=""/>
+        </input>
+        <output>
+            <field additional="" formattingType="" id="EXPECTED_ROW" length="0" lengthRef="" name="반영건수" padChar="" padType="" type="" validationLogic="" validationType=""/>
+        </output>
+    </method>
+</method-list>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="${__NAMESPACE__}">
+	<select id="s001" parameterClass="map" resultClass="hmap" fetchSize="50"><![CDATA[/* 고객정보 SELECT | Administrator(admin), 2018-09-09 23:32:55 */
+SELECT
+       a.ID                  AS ID                  /* 아이디 */ 
+     , a.NAME                AS NAME                /* 한글명 */ 
+     , a.ENG_NAME            AS ENG_NAME            /* 영문명 */ 
+     , a.BIRTHDAY            AS BIRTHDAY            /* 생년월일 */ 
+     , a.CUSTOMER_TYPE       AS CUSTOMER_TYPE       /* 고객타입 */ 
+     , a.CELLPHONE           AS CELLPHONE           /* 휴대전화 */ 
+     , a.EMAIL               AS EMAIL               /* 이메일 */ 
+     , a.POSTAL_CODE         AS POSTAL_CODE         /* 우편번호 */ 
+     , a.ADDRESS             AS ADDRESS             /* 자택주소 */ 
+     , a.ADDRESS_DETAIL      AS ADDRESS_DETAIL      /* 상세주소 */ 
+     , a.HOME_PHONE          AS HOME_PHONE          /* 자택전화 */ 
+     , a.COMPANY             AS COMPANY             /* 직장명 */ 
+     , a.DEPARTMENT          AS DEPARTMENT          /* 부서명 */ 
+     , a.POSITION            AS POSITION            /* 직위 */ 
+     , a.COMPANY_PHONE       AS COMPANY_PHONE       /* 직장전화 */ 
+     , a.BLOOD_TYPE          AS BLOOD_TYPE          /* 혈액형 */ 
+     , a.RELIGION            AS RELIGION            /* 종교 */ 
+     , a.HOBBY               AS HOBBY               /* 취미 */ 
+     , a.WEDDING_ANNIVERSARY AS WEDDING_ANNIVERSARY /* 결혼기념일 */ 
+     , a.INCOME_FOR_YEAR     AS INCOME_FOR_YEAR     /* 연수입 */ 
+     , a.SAVING_FOR_MONTH    AS SAVING_FOR_MONTH    /* 월저축 */ 
+     , a.CREATED_DATE        AS CREATED_DATE        /* 등록일 */ 
+     , a.MODIFIED_DATE       AS MODIFIED_DATE       /* 수정일 */ 
+     , a.NOTES               AS NOTES               /* 비고 */ 
+  FROM TB_CBS_XYZ_CUST_M a /* 고객정보 */ 
+ WHERE a.ID = #ID#]]>
+	</select>
+	<select id="s002" parameterClass="map" resultClass="hmap" fetchSize="50"><![CDATA[/* 고객정보 SELECT ALL | Administrator(admin), 2018-09-09 23:32:55 */
+SELECT
+       a.ID                  AS ID                  /* 아이디 */ 
+     , a.NAME                AS NAME                /* 한글명 */ 
+     , a.ENG_NAME            AS ENG_NAME            /* 영문명 */ 
+     , a.BIRTHDAY            AS BIRTHDAY            /* 생년월일 */ 
+     , a.CUSTOMER_TYPE       AS CUSTOMER_TYPE       /* 고객타입 */ 
+     , a.CELLPHONE           AS CELLPHONE           /* 휴대전화 */ 
+     , a.EMAIL               AS EMAIL               /* 이메일 */ 
+     , a.POSTAL_CODE         AS POSTAL_CODE         /* 우편번호 */ 
+     , a.ADDRESS             AS ADDRESS             /* 자택주소 */ 
+     , a.ADDRESS_DETAIL      AS ADDRESS_DETAIL      /* 상세주소 */ 
+     , a.HOME_PHONE          AS HOME_PHONE          /* 자택전화 */ 
+     , a.COMPANY             AS COMPANY             /* 직장명 */ 
+     , a.DEPARTMENT          AS DEPARTMENT          /* 부서명 */ 
+     , a.POSITION            AS POSITION            /* 직위 */ 
+     , a.COMPANY_PHONE       AS COMPANY_PHONE       /* 직장전화 */ 
+     , a.BLOOD_TYPE          AS BLOOD_TYPE          /* 혈액형 */ 
+     , a.RELIGION            AS RELIGION            /* 종교 */ 
+     , a.HOBBY               AS HOBBY               /* 취미 */ 
+     , a.WEDDING_ANNIVERSARY AS WEDDING_ANNIVERSARY /* 결혼기념일 */ 
+     , a.INCOME_FOR_YEAR     AS INCOME_FOR_YEAR     /* 연수입 */ 
+     , a.SAVING_FOR_MONTH    AS SAVING_FOR_MONTH    /* 월저축 */ 
+     , a.CREATED_DATE        AS CREATED_DATE        /* 등록일 */ 
+     , a.MODIFIED_DATE       AS MODIFIED_DATE       /* 수정일 */ 
+     , a.NOTES               AS NOTES               /* 비고 */ 
+  FROM TB_CBS_XYZ_CUST_M a /* 고객정보 */ 
+ WHERE a.ID = #ID#]]>
+	</select>
+	<select id="s003" parameterClass="map" resultClass="hmap" fetchSize="50"><![CDATA[/* 고객정보 SELECT FOR UPDATE | Administrator(admin), 2018-09-09 23:32:55 */
+SELECT
+       a.ID                  AS ID                  /* 아이디 */ 
+     , a.NAME                AS NAME                /* 한글명 */ 
+     , a.ENG_NAME            AS ENG_NAME            /* 영문명 */ 
+     , a.BIRTHDAY            AS BIRTHDAY            /* 생년월일 */ 
+     , a.CUSTOMER_TYPE       AS CUSTOMER_TYPE       /* 고객타입 */ 
+     , a.CELLPHONE           AS CELLPHONE           /* 휴대전화 */ 
+     , a.EMAIL               AS EMAIL               /* 이메일 */ 
+     , a.POSTAL_CODE         AS POSTAL_CODE         /* 우편번호 */ 
+     , a.ADDRESS             AS ADDRESS             /* 자택주소 */ 
+     , a.ADDRESS_DETAIL      AS ADDRESS_DETAIL      /* 상세주소 */ 
+     , a.HOME_PHONE          AS HOME_PHONE          /* 자택전화 */ 
+     , a.COMPANY             AS COMPANY             /* 직장명 */ 
+     , a.DEPARTMENT          AS DEPARTMENT          /* 부서명 */ 
+     , a.POSITION            AS POSITION            /* 직위 */ 
+     , a.COMPANY_PHONE       AS COMPANY_PHONE       /* 직장전화 */ 
+     , a.BLOOD_TYPE          AS BLOOD_TYPE          /* 혈액형 */ 
+     , a.RELIGION            AS RELIGION            /* 종교 */ 
+     , a.HOBBY               AS HOBBY               /* 취미 */ 
+     , a.WEDDING_ANNIVERSARY AS WEDDING_ANNIVERSARY /* 결혼기념일 */ 
+     , a.INCOME_FOR_YEAR     AS INCOME_FOR_YEAR     /* 연수입 */ 
+     , a.SAVING_FOR_MONTH    AS SAVING_FOR_MONTH    /* 월저축 */ 
+     , a.CREATED_DATE        AS CREATED_DATE        /* 등록일 */ 
+     , a.MODIFIED_DATE       AS MODIFIED_DATE       /* 수정일 */ 
+     , a.NOTES               AS NOTES               /* 비고 */ 
+  FROM TB_CBS_XYZ_CUST_M a /* 고객정보 */ 
+ WHERE a.ID = #ID#
+   FOR UPDATE]]>
+	</select>
+	<insert id="i001" parameterClass="map"><![CDATA[/* 고객정보 INSERT | Administrator(admin), 2018-09-09 23:32:56 */
+INSERT
+  INTO TB_CBS_XYZ_CUST_M
+      ( ID                  /* 아이디 */ 	
+      , NAME                /* 한글명 */ 	
+      , ENG_NAME            /* 영문명 */ 	
+      , BIRTHDAY            /* 생년월일 */ 	
+      , CUSTOMER_TYPE       /* 고객타입 */ 	
+      , CELLPHONE           /* 휴대전화 */ 	
+      , EMAIL               /* 이메일 */ 	
+      , POSTAL_CODE         /* 우편번호 */ 	
+      , ADDRESS             /* 자택주소 */ 	
+      , ADDRESS_DETAIL      /* 상세주소 */ 	
+      , HOME_PHONE          /* 자택전화 */ 	
+      , COMPANY             /* 직장명 */ 	
+      , DEPARTMENT          /* 부서명 */ 	
+      , POSITION            /* 직위 */ 	
+      , COMPANY_PHONE       /* 직장전화 */ 	
+      , BLOOD_TYPE          /* 혈액형 */ 	
+      , RELIGION            /* 종교 */ 	
+      , HOBBY               /* 취미 */ 	
+      , WEDDING_ANNIVERSARY /* 결혼기념일 */ 	
+      , INCOME_FOR_YEAR     /* 연수입 */ 	
+      , SAVING_FOR_MONTH    /* 월저축 */ 	
+      , CREATED_DATE        /* 등록일 */ 	
+      , MODIFIED_DATE       /* 수정일 */ 	
+      , NOTES               /* 비고 */ )	
+VALUES
+      ( #ID#	
+      , #NAME# 	
+      , #ENG_NAME# 	
+      , #BIRTHDAY# 	
+      , #CUSTOMER_TYPE# 	
+      , #CELLPHONE# 	
+      , #EMAIL# 	
+      , #POSTAL_CODE# 	
+      , #ADDRESS# 	
+      , #ADDRESS_DETAIL# 	
+      , #HOME_PHONE# 	
+      , #COMPANY# 	
+      , #DEPARTMENT# 	
+      , #POSITION# 	
+      , #COMPANY_PHONE# 	
+      , #BLOOD_TYPE# 	
+      , #RELIGION# 	
+      , #HOBBY# 	
+      , #WEDDING_ANNIVERSARY# 	
+      , #INCOME_FOR_YEAR# 	
+      , #SAVING_FOR_MONTH# 	
+      , #CREATED_DATE# 	
+      , #MODIFIED_DATE# 	
+      , #NOTES#)]]>
+	</insert>
+	<update id="u001" parameterClass="map"><![CDATA[/* 고객정보 UPDATE | Administrator(admin), 2018-09-09 23:32:56 */
+UPDATE TB_CBS_XYZ_CUST_M
+   SET NAME                = #NAME#                /* 한글명 */ 
+     , ENG_NAME            = #ENG_NAME#            /* 영문명 */ 
+     , BIRTHDAY            = #BIRTHDAY#            /* 생년월일 */ 
+     , CUSTOMER_TYPE       = #CUSTOMER_TYPE#       /* 고객타입 */ 
+     , CELLPHONE           = #CELLPHONE#           /* 휴대전화 */ 
+     , EMAIL               = #EMAIL#               /* 이메일 */ 
+     , POSTAL_CODE         = #POSTAL_CODE#         /* 우편번호 */ 
+     , ADDRESS             = #ADDRESS#             /* 자택주소 */ 
+     , ADDRESS_DETAIL      = #ADDRESS_DETAIL#      /* 상세주소 */ 
+     , HOME_PHONE          = #HOME_PHONE#          /* 자택전화 */ 
+     , COMPANY             = #COMPANY#             /* 직장명 */ 
+     , DEPARTMENT          = #DEPARTMENT#          /* 부서명 */ 
+     , POSITION            = #POSITION#            /* 직위 */ 
+     , COMPANY_PHONE       = #COMPANY_PHONE#       /* 직장전화 */ 
+     , BLOOD_TYPE          = #BLOOD_TYPE#          /* 혈액형 */ 
+     , RELIGION            = #RELIGION#            /* 종교 */ 
+     , HOBBY               = #HOBBY#               /* 취미 */ 
+     , WEDDING_ANNIVERSARY = #WEDDING_ANNIVERSARY# /* 결혼기념일 */ 
+     , INCOME_FOR_YEAR     = #INCOME_FOR_YEAR#     /* 연수입 */ 
+     , SAVING_FOR_MONTH    = #SAVING_FOR_MONTH#    /* 월저축 */ 
+     , CREATED_DATE        = #CREATED_DATE#        /* 등록일 */ 
+     , MODIFIED_DATE       = #MODIFIED_DATE#       /* 수정일 */ 
+     , NOTES               = #NOTES#               /* 비고 */ 
+ WHERE ID = #ID#]]>
+	</update>
+	<delete id="d001" parameterClass="map"><![CDATA[/* 고객정보 DELETE | Administrator(admin), 2018-09-09 23:32:56 */
+DELETE
+  FROM TB_CBS_XYZ_CUST_M
+ WHERE ID = #ID# /* 아이디 */ ]]>
+	</delete>
+</sqlMap>

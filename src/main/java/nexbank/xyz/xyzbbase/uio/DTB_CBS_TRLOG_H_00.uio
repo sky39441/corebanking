@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><method-list>
+    <method fixedLength="false" id="i001">
+        <input/>
+        <output/>
+    </method>
+    <method fixedLength="false" id="s001">
+        <input/>
+        <output/>
+    </method>
+    <method fixedLength="false" id="s002">
+        <input/>
+        <output/>
+    </method>
+</method-list>

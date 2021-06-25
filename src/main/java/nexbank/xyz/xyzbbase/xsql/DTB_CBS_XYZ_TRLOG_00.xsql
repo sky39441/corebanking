@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="${__NAMESPACE__}">
+	<select id="s001" parameterClass="map" resultClass="hmap" fetchSize="50"><![CDATA[/* TB_CBS_XYZ_TRLOG SELECT | Administrator(admin), 2018-09-17 21:01:29 */
+SELECT
+       a.TX_IX       AS TX_IX       /*  */ 
+     , a.TX_KIND     AS TX_KIND     /*  */ 
+     , a.AMOUNT      AS AMOUNT      /*  */ 
+     , a.TX_DATETIME AS TX_DATETIME /*  */ 
+     , a.ACC_NO1     AS ACC_NO1     /*  */ 
+     , a.ACC_NO2     AS ACC_NO2     /*  */ 
+     , a.DESC_1      AS DESC_1      /*  */ 
+     , a.DESC_2      AS DESC_2      /*  */ 
+  FROM TB_CBS_XYZ_TRLOG a /*  */ 
+ WHERE a.TX_IX       = #TX_IX#
+   AND a.TX_KIND     = #TX_KIND#
+   AND a.AMOUNT      = #AMOUNT#
+   AND a.TX_DATETIME = #TX_DATETIME#
+   AND a.ACC_NO1     = #ACC_NO1#
+   AND a.ACC_NO2     = #ACC_NO2#
+   AND a.DESC_1      = #DESC_1#
+   AND a.DESC_2      = #DESC_2#]]>
+	</select>
+	<select id="s002" parameterClass="map" resultClass="hmap" fetchSize="50"><![CDATA[/* TB_CBS_XYZ_TRLOG SELECT ALL | Administrator(admin), 2018-09-17 21:01:30 */
+SELECT
+       a.TX_IX       AS TX_IX       /*  */ 
+     , a.TX_KIND     AS TX_KIND     /*  */ 
+     , a.AMOUNT      AS AMOUNT      /*  */ 
+     , a.TX_DATETIME AS TX_DATETIME /*  */ 
+     , a.ACC_NO1     AS ACC_NO1     /*  */ 
+     , a.ACC_NO2     AS ACC_NO2     /*  */ 
+     , a.DESC_1      AS DESC_1      /*  */ 
+     , a.DESC_2      AS DESC_2      /*  */ 
+  FROM TB_CBS_XYZ_TRLOG a /*  */ ]]>
+	</select>
+	<select id="s003" parameterClass="map" resultClass="hmap" fetchSize="50"><![CDATA[/* TB_CBS_XYZ_TRLOG SELECT FOR UPDATE | Administrator(admin), 2018-09-17 21:01:30 */
+SELECT
+       a.TX_IX       AS TX_IX       /*  */ 
+     , a.TX_KIND     AS TX_KIND     /*  */ 
+     , a.AMOUNT      AS AMOUNT      /*  */ 
+     , a.TX_DATETIME AS TX_DATETIME /*  */ 
+     , a.ACC_NO1     AS ACC_NO1     /*  */ 
+     , a.ACC_NO2     AS ACC_NO2     /*  */ 
+     , a.DESC_1      AS DESC_1      /*  */ 
+     , a.DESC_2      AS DESC_2      /*  */ 
+  FROM TB_CBS_XYZ_TRLOG a /*  */ 
+ WHERE a.TX_IX       = #TX_IX#
+   AND a.TX_KIND     = #TX_KIND#
+   AND a.AMOUNT      = #AMOUNT#
+   AND a.TX_DATETIME = #TX_DATETIME#
+   AND a.ACC_NO1     = #ACC_NO1#
+   AND a.ACC_NO2     = #ACC_NO2#
+   AND a.DESC_1      = #DESC_1#
+   AND a.DESC_2      = #DESC_2#
+   FOR UPDATE]]>
+	</select>
+	<insert id="i001" parameterClass="map"><![CDATA[/* TB_CBS_XYZ_TRLOG INSERT | Administrator(admin), 2018-09-17 21:01:30 */
+INSERT
+  INTO TB_CBS_XYZ_TRLOG
+      ( TX_IX       /*  */ 	
+      , TX_KIND     /*  */ 	
+      , AMOUNT      /*  */ 	
+      , TX_DATETIME /*  */ 	
+      , ACC_NO1     /*  */ 	
+      , ACC_NO2     /*  */ 	
+      , DESC_1      /*  */ 	
+      , DESC_2      /*  */ )	
+VALUES
+      ( #TX_IX#	
+      , #TX_KIND# 	
+      , #AMOUNT# 	
+      , #TX_DATETIME# 	
+      , #ACC_NO1# 	
+      , #ACC_NO2# 	
+      , #DESC_1# 	
+      , #DESC_2#)]]>
+	</insert>
+	<update id="u001" parameterClass="map"><![CDATA[/* TB_CBS_XYZ_TRLOG UPDATE | Administrator(admin), 2018-09-17 21:01:30 */
+UPDATE TB_CBS_XYZ_TRLOG
+   SET TX_IX       = #TX_IX#       /*  */ 
+     , TX_KIND     = #TX_KIND#     /*  */ 
+     , AMOUNT      = #AMOUNT#      /*  */ 
+     , TX_DATETIME = #TX_DATETIME# /*  */ 
+     , ACC_NO1     = #ACC_NO1#     /*  */ 
+     , ACC_NO2     = #ACC_NO2#     /*  */ 
+     , DESC_1      = #DESC_1#      /*  */ 
+     , DESC_2      = #DESC_2#      /*  */ ]]>
+	</update>
+	<delete id="d001" parameterClass="map"><![CDATA[/* TB_CBS_XYZ_TRLOG DELETE | Administrator(admin), 2018-09-17 21:01:30 */
+DELETE
+  FROM TB_CBS_XYZ_TRLOG]]>
+	</delete>
+</sqlMap>

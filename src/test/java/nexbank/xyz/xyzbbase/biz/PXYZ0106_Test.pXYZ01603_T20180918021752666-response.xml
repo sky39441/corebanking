@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <context>
+    <txId>nexbank.xyz.xyzbbase@PXYZ0106.pXYZ01603</txId>
+    <globId>20180918022039699DFWKXXXXDPOC0100007</globId>
+    <startDate>20180918022039699</startDate>
+    <endDate>20180918022039797</endDate>
+    <attributes>
+      <dateTime>20180918021752</dateTime>
+      <time>021752</time>
+      <userName>Administrator</userName>
+      <userId>admin</userId>
+    </attributes>
+  </context>
+  <message>
+    <status>OK</status>
+    <messageId />
+    <messageValue />
+    <messageReason />
+  </message>
+  <body>
+    <ACC_NO>1000111112</ACC_NO>
+    <ACC_NAME>예금통장</ACC_NAME>
+    <ACC_PASSWD>1234</ACC_PASSWD>
+    <ACC_BALANCE>100000</ACC_BALANCE>
+    <CRE_DTM>20180918022039740</CRE_DTM>
+    <UPD_DTM>20180918022039740</UPD_DTM>
+  </body>
+</root>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<method-list>
+  <method id="pXYZ09201" fixedLength="true">
+    <input>
+    </input>
+    <output>
+    </output>
+  </method>
+  <method id="pXYZ09202" fixedLength="true">
+    <input>
+      <field id="inputByteArray" name="입력전문" type="binary" length="-99" lengthRef="" padType="" padChar="" formattingType="" additional="" />
+    </input>
+    <output>
+      <field id="outputByteArray" name="응답전문" type="binary" length="-99" lengthRef="" padType="" padChar="" formattingType="" additional="" />
+    </output>
+  </method>
+  <method id="pXYZ09203" fixedLength="true">
+    <input>
+      <field id="inputByteArray" name="입력전문" type="binary" length="-99" lengthRef="" padType="" padChar="" formattingType="" additional="" />
+    </input>
+    <output>
+      <field id="outputByteArray" name="응답전문" type="binary" length="-99" lengthRef="" padType="" padChar="" formattingType="" additional="" />
+    </output>
+  </method>
+  <method id="pXYZ09204" fixedLength="true">
+    <input>
+    </input>
+    <output>
+    </output>
+  </method>
+</method-list>
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<method-list>
+  <method id="pXYZ00102" fixedLength="true">
+    <input>
+      <field id="FILE_ID" name="파일아이디" type="string" length="128" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="FILE_NAME" name="파일명" type="string" length="512" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      <field id="STORAGE_TYPE" name="보관유형" type="string" length="10" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+    </input>
+    <output>
+      <field id="LIST_SIZE" name="목록사이즈" type="int" length="5" lengthRef="" padType="left" padChar="0x30" formattingType="" additional="" />
+      <recordSet id="LIST" name="목록" recordCount="0" recordCountRef="LIST_SIZE">
+        <field id="FILE_ID" name="파일아이디" type="string" length="128" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="FILE_NAME" name="파일명" type="string" length="512" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="STORAGE_TYPE" name="보관유형" type="string" length="10" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="CRE_DTM" name="생성일시" type="string" length="17" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="UPD_DTM" name="수정일시" type="string" length="17" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      </recordSet>
+    </output>
+  </method>
+  <method id="pXYZ00103" fixedLength="true">
+    <input>
+      <field id="FILE_ID" name="파일아이디" type="string" length="128" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+    </input>
+    <output>
+      <field id="LIST_SIZE" name="목록사이즈" type="int" length="5" lengthRef="" padType="left" padChar="0x30" formattingType="" additional="" />
+      <recordSet id="LIST" name="목록" recordCount="0" recordCountRef="LIST_SIZE">
+        <field id="FILE_ID" name="파일아이디" type="string" length="128" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="FILE_NAME" name="파일명" type="string" length="512" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="STORAGE_TYPE" name="보관유형" type="string" length="10" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="CRE_DTM" name="생성일시" type="string" length="17" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="UPD_DTM" name="수정일시" type="string" length="17" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      </recordSet>
+    </output>
+  </method>
+  <method id="pXYZ00101" fixedLength="true">
+    <input />
+    <output>
+      <field id="LIST_SIZE" name="목록사이즈" type="int" length="5" lengthRef="" padType="left" padChar="0x30" formattingType="" additional="" />
+      <recordSet id="LIST" name="목록" recordCount="0" recordCountRef="LIST_SIZE">
+        <field id="FILE_ID" name="파일아이디" type="string" length="128" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="FILE_NAME" name="파일명" type="string" length="512" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="STORAGE_TYPE" name="보관유형" type="string" length="10" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="CRE_DTM" name="생성일시" type="string" length="17" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+        <field id="UPD_DTM" name="수정일시" type="string" length="17" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+      </recordSet>
+    </output>
+  </method>
+  <method id="pXYZ00104" fixedLength="true">
+    <input>
+      <field id="FILE_ID" name="파일아이디" type="string" length="128" lengthRef="" padType="right" padChar="0x20" formattingType="" additional="" />
+    </input>
+    <output />
+  </method>
+</method-list>
+

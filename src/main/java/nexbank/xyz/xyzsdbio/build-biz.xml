@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="NEXCORE Local Build Component" basedir="." default="all">
+
+	<property environment="env" />
+	<property name="antfile.absolute.path" value="${ant.file}" />
+
+	<!-- ################################################################## -->
+	<!-- ## [NEXCORE_HOME] common build property ########################## -->
+	<!-- ################################################################## -->
+	<!-- default build.properties -->
+	<property file="${NEXCORE_HOME_ANT}/build/script/nexcore.build.properties" />
+	<target name="check.nexcore.property" unless="NEXCORE_HOME">
+		<echo message=" find NEXCORE_HOME ..." />
+		<antcall target="check.nexcore.property.anthome" />
+	</target>
+	<target name="check.nexcore.property.anthome">
+		<echo message="ERROR: " />
+		<echo message="      define property 'NEXCORE_HOME_ANT' first " />
+		<echo message="      in your Eclipse Preferences [Ant-Runtime-Properties]" />
+		<echo message="      before depoying" />
+		<fail message="ERROR: Ant runtime property 'NEXCORE_HOME_ANT' not exist " />
+	</target>
+
+	<!-- ################################################################## -->
+	<!-- ## ALL     Deployment ############################################ -->
+	<!-- ################################################################## -->
+	<target name="all" depends="check.nexcore.property">
+		<ant antfile="${NEXCORE_HOME}/build/script/build-biz-common.xml" target="all-component" />
+	</target>
+
+	<!-- ################################################################## -->
+	<!-- ## ALL     Deployment ############################################ -->
+	<!-- ################################################################## -->
+	<target name="all-coverage" depends="check.nexcore.property">
+		<ant antfile="${NEXCORE_HOME}/build/script/build-test-coverage.xml" target="all-component" />
+	</target>
+
+</project>

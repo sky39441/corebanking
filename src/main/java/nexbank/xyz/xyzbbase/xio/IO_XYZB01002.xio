@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xio>
+	<fixedLength>true</fixedLength>
+    <name>단말응답전문</name>
+    <description>단말응답전문</description>
+    <layout>
+    	<field id="message" name="메시지" type="string" length="100" lengthRef="" padType="right" padChar="0x20" />
+    </layout>
+</xio>
