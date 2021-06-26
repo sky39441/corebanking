@@ -35,9 +35,6 @@ public class PXYZ0103 extends nexbank.fwk.base.ProcessUnit {
 	private FXYZ0100 fXYZ0100;
 	
 	@BizUnitBind
-	private DATB_CBS_XYZ_POC_00 dATB_CBS_XYZ_POC_00;
-
-	@BizUnitBind
 	private DTB_CBS_XYZ_TRLOG_00 dTB_CBS_XYZ_TRLOG_00;
 
 	/**
