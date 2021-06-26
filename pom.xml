@@ -5,8 +5,8 @@
 	<groupId>com.skcc.nexcoredt</groupId>
 	<artifactId>nexbank.xyz.xyzbbase</artifactId>
 	<version>1</version>
-	<name>ordinaryinspection</name>
-	<description>상시감사</description>
+	<name>corebanking</name>
+	<description>코어뱅킹 샘플. 입금/출금/이체</description>
 
 	<distributionManagement>
 		<repository> 
