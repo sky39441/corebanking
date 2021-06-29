@@ -119,8 +119,9 @@ public class PXYZ0102 extends nexbank.fwk.base.ProcessUnit  {
 		    fFWK09CashReq.put("ACC_NO", requestData.getString("ACC_NO"));
 		    fFWK09CashReq.put("KIND", "O");
 		    fFWK09CashReq.put("AMOUNT", AMOUNT);
+		    
 		    callSharedMethodByDirect("nexbank.fwk.fwksbase", "FFWK0903.cash", fFWK09CashReq, onlineCtx);
-	
+
 		    return responseData;
 	    }
 	    catch(BizRuntimeException e){

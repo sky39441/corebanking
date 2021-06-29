@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="${__NAMESPACE__}">
+	<select id="S001" parameterClass="map" resultClass="hmap" fetchSize="50" ><![CDATA[/* 상품 목록 */
+SELECT
+        a.PRD_CD AS PRD_CD /* 상품코드 */ 	
+     ,  a.PRD_NAME AS PRD_NAME /* 상품명 */ 	
+     ,  a.PRD_RATE AS PRD_RATE /*  */ 	
+     ,  a.CRE_DTM AS CRE_DTM /* 생성일시 */ 	
+     ,  a.UPD_DTM AS UPD_DTM /* 수정일시 */ 	
+  FROM  TB_CBS_XYZ_PRDCD_M a
+ORDER BY a.PRD_CD]]>
+	</select>
+</sqlMap>

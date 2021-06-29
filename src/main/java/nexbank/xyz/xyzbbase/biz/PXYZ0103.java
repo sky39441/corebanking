@@ -4,6 +4,7 @@ import org.apache.commons.logging.Log;
 
 import nexbank.common.CommonArea;
 import nexbank.common.OutboundHeader;
+import nexbank.fwk.messaging.EventSender;
 import nexbank.fwk.outbound.OutboundTarget;
 import nexcore.framework.core.component.streotype.BizMethod;
 import nexcore.framework.core.component.streotype.BizUnit;
@@ -86,37 +87,6 @@ public class PXYZ0103 extends nexbank.fwk.base.ProcessUnit {
 	    depositDataSet.put("AMOUNT", amount);
 
 	    try{
-		    
-//	    	/**********************************************************************/
-//	    	// ■■■■■■■■■■  NOTX 이체 이력 테이블 저장
-//		    IDataSet i001Req = new DataSet();
-//			i001Req.put("TX_IX",       ca.getTxId()); // TX_IX
-//			i001Req.put("TX_KIND",     "당행이체"); // TX_KIND
-//			i001Req.put("AMOUNT",      amount); // AMOUNT
-//			i001Req.put("TX_DATETIME", DateUtils.getDateString  ("yyyyMMddHHmmss")); // TX_DATETIME
-//			i001Req.put("ACC_NO1",     withdrawDataSet.getString("ACC_NO")); // ACC_NO1
-//			i001Req.put("ACC_NO2",     depositDataSet.getString ("ACC_NO"));  // ACC_NO2
-//			i001Req.put("DESC_1",      withdrawDataSet.getString("DESCRIPTION"));  // DESC_1
-//			i001Req.put("DESC_2",      depositDataSet.getString ("DESCRIPTION"));   // DESC_2
-//
-//			// notx 로 이체 이력 생성. 에러 발생해도 ROLLBACK 되지 않도록 한다.
-//			dTB_CBS_XYZ_TRLOG_00.i001(i001Req, onlineCtx);
-//			/**********************************************************************/
-//			
-//					
-//			
-//			/**********************************************************************/
-//		    // ■■■■■■■■■■   MariaDB 에 XA 로 저장
-//			// 유닛 메소드 호출 - mariadb 에 등록 (DATB_CBS_XYZ_POC_00.i001)
-//		    IDataSet i001Req2 = new DataSet();
-//			i001Req2.put("DESC",   withdrawDataSet.get("DESCRIPTION")+"->"+depositDataSet.get("DESCRIPTION")); // 적요
-//			i001Req2.put("AMOUNT", requestData.get("AMOUNT")); // 금액
-//			i001Req2.put("GUID",   ca.getGlobId()); // GUID
-//
-//		    dATB_CBS_XYZ_POC_00.i001(i001Req2, onlineCtx);
-//			/**********************************************************************/
-
-		    
 		    /**********************************************************************/
 		    // ■■■■■■■■■■ 출금 서비스 호출
 		    callService("XYZ01201", withdrawDataSet, onlineCtx);
@@ -127,6 +97,9 @@ public class PXYZ0103 extends nexbank.fwk.base.ProcessUnit {
 		    callService("XYZ01101", depositDataSet, onlineCtx);
 		    /**********************************************************************/
 		
+		    EventSender.getInstance().publishEvents("XYZ99901", requestData, onlineCtx);
+		    log.info("상시감사 메시지 전송:"+requestData);
+		    
 		    return responseData;
 	    }
 	    catch(Exception e){

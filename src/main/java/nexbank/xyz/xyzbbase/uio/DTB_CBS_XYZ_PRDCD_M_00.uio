@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<method-list>
+  <method id="s001" fixedLength="false">
+    <input />
+    <output>
+      <recordSet id="LIST" name="상품목록" recordCount="0" recordCountRef="">
+        <field id="PRD_CD" name="상품코드" type="" length="0" lengthRef="" padType="" padChar="" formattingType="" additional="" />
+        <field id="PRD_NAME" name="상품명" type="" length="0" lengthRef="" padType="" padChar="" formattingType="" additional="" />
+        <field id="PRD_RATE" name="PRD_RATE" type="" length="0" lengthRef="" padType="" padChar="" formattingType="" additional="" />
+        <field id="CRE_DTM" name="생성일시" type="" length="0" lengthRef="" padType="" padChar="" formattingType="" additional="" />
+        <field id="UPD_DTM" name="수정일시" type="" length="0" lengthRef="" padType="" padChar="" formattingType="" additional="" />
+      </recordSet>
+    </output>
+  </method>
+</method-list>
+

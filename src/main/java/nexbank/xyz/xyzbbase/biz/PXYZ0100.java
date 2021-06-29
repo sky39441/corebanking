@@ -116,11 +116,11 @@ public class PXYZ0100 extends nexbank.fwk.base.ProcessUnit  {
 	    }
 	    
 	    // 부점 목록 조회
-	    IDataSet dTB_CBS_XYZ_BRCD_M_00_S001Res = callSharedMethodByDirect("nexbank.xyz.xyzsbase", "DTB_CBS_XYZ_BRCD_M_00.s001", requestData, onlineCtx);
+	    IDataSet dTB_CBS_XYZ_BRCD_M_00_S001Res = callMethodByDirect("DTB_CBS_XYZ_BRCD_M_00.s001", requestData, onlineCtx);
 	    IRecordSet brList = dTB_CBS_XYZ_BRCD_M_00_S001Res.getRecordSet("LIST");
 	    	    
 	    // 상품 목록 조회
-	    IDataSet dTB_CBS_XYZ_PRDCD_M_00_S001Res = callSharedMethodByDirect("nexbank.xyz.xyzsbase", "DTB_CBS_XYZ_PRDCD_M_00.s001", requestData, onlineCtx);
+	    IDataSet dTB_CBS_XYZ_PRDCD_M_00_S001Res = callMethodByDirect("DTB_CBS_XYZ_PRDCD_M_00.s001", requestData, onlineCtx);
 	    IRecordSet prdList = dTB_CBS_XYZ_PRDCD_M_00_S001Res.getRecordSet("LIST");
 	    
 	    // 처리 결과값을 responseData에 넣어서 리턴하십시요
@@ -453,22 +453,19 @@ public class PXYZ0100 extends nexbank.fwk.base.ProcessUnit  {
 	    }
 	    
 	    // 부점 목록 조회
-//	    SharedBizComponent xYZSBase = lookupSharedBizComponent("nexbank.xyz.xyzsbase");
-	    IDataSet dTB_CBS_XYZ_BRCD_M_00_S001Res = callSharedMethodByDirect("nexbank.xyz.xyzsbase", "DTB_CBS_XYZ_BRCD_M_00.s001", requestData, onlineCtx);
+	    IDataSet dTB_CBS_XYZ_BRCD_M_00_S001Res = callMethodByDirect("DTB_CBS_XYZ_BRCD_M_00.s001", requestData, onlineCtx);
 	    IRecordSet brList = dTB_CBS_XYZ_BRCD_M_00_S001Res.getRecordSet("LIST");
 	    
 	    // 강제로 대기하도록 함.
 	    for(int i=0; i<100; i++){
-	    	callSharedMethodByDirect("nexbank.xyz.xyzsbase", "FXYZ0901.xyzPre", requestData, onlineCtx);
-//		    IDataSet dTB_CBS_XYZ_PRDCD_M_00_S001Res = callSharedBizComponentByDirect("nexbank.xyz.xyzsbase", "dTB_CBS_XYZ_PRDCD_M_00_S001", requestData, onlineCtx);
-//		    IRecordSet prdList = dTB_CBS_XYZ_PRDCD_M_00_S001Res.getRecordSet("LIST");
+	    	callMethodByDirect("FXYZ0901.xyzPre", requestData, onlineCtx);
 		    try{
 		    	Thread.sleep(1000);
 		    }catch(Exception e){}
 	    }
 	    
 	    // 상품 목록 조회
-	    IDataSet dTB_CBS_XYZ_PRDCD_M_00_S001Res = callSharedMethodByDirect("nexbank.xyz.xyzsbase", "DTB_CBS_XYZ_PRDCD_M_00.s001", requestData, onlineCtx);
+	    IDataSet dTB_CBS_XYZ_PRDCD_M_00_S001Res = callMethodByDirect("DTB_CBS_XYZ_PRDCD_M_00.s001", requestData, onlineCtx);
 	    IRecordSet prdList = dTB_CBS_XYZ_PRDCD_M_00_S001Res.getRecordSet("LIST");
 	    
 	    // 처리 결과값을 responseData에 넣어서 리턴하십시요

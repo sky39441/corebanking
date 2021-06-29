@@ -9,46 +9,50 @@
 	<description>코어뱅킹 샘플. 입금/출금/이체</description>
 
 	<distributionManagement>
-		<repository> 
-		  <id>sky394410032</id>
-		  <url>https://pkgs.dev.azure.com/sky394410032/_packaging/sky394410032/maven/v1</url>
-		  <releases>
-		    <enabled>true</enabled>
-		  </releases>
-		  <snapshots>
-		    <enabled>true</enabled>
-		  </snapshots>
+		<repository>
+			<id>sky39441</id>
+			<url>https://pkgs.dev.azure.com/sky39441/_packaging/sky39441/maven/v1</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
 		</repository>
 	</distributionManagement>
 
 	<repositories>
-		<repository> 
-		  <id>sky394410032</id>
-		  <url>https://pkgs.dev.azure.com/sky394410032/_packaging/sky394410032/maven/v1</url>
-		  <releases>
-		    <enabled>true</enabled>
-		  </releases>
-		  <snapshots>
-		    <enabled>true</enabled>
-		  </snapshots>
+		<repository>
+			<id>sky39441</id>
+			<url>https://pkgs.dev.azure.com/sky39441/_packaging/sky39441/maven/v1</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
 		</repository>
 	</repositories>
+
+	<properties>
+		<my.build.target.dir>C:\projects\dt-level3\4-xyz-applications</my.build.target.dir> 
+	</properties>
 	
 	<dependencies>
 		<dependency>
-		  <groupId>nexcore-framework</groupId>
-		  <artifactId>nexcore-framework-core</artifactId>
-		  <version>8.1</version>
+			<groupId>nexcore-framework</groupId>
+			<artifactId>nexcore-framework-core</artifactId>
+			<version>8.1.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-		  <groupId>nexcore-framework</groupId>
-		  <artifactId>nexcore-framework-core-online</artifactId>
-		  <version>8.1</version>
+			<groupId>nexcore-framework</groupId>
+			<artifactId>nexcore-framework-core-online</artifactId>
+			<version>8.1.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-		  <groupId>nexcore-framework</groupId>
-		  <artifactId>nexcore-framework-custom-nexbank</artifactId>
-		  <version>8.1</version>
+			<groupId>nexcore-framework</groupId>
+			<artifactId>nexcore-framework-custom-nexbank</artifactId>
+			<version>8.1.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.commons</groupId>
@@ -86,4 +90,45 @@
 			<version>4.1.1</version>
 		</dependency>
 	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.6.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.3.1</version>
+				<configuration>
+					<outputDirectory>${my.build.target.dir}</outputDirectory>
+					<finalName>${project.artifactId}</finalName>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>3.0.0</version>
+				<executions>
+					<execution>
+						<id>touch-component</id>
+						<phase>package</phase>
+						<configuration>
+							<target>
+								<echo file="${my.build.target.dir}/${project.artifactId}.component" message="${buildDate}"/>
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>
