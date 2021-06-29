@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: corebanking
+  labels:
+    app: corebanking
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: corebanking
+  template:
+    metadata:
+      labels:
+        app: corebanking
+    spec:
+      containers:
+      - name: corebanking
+        image: hocheol.azurecr.io/corebanking-jar:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8088
