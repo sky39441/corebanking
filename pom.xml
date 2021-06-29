@@ -35,7 +35,8 @@
 	</repositories>
 
 	<properties>
-		<my.build.target.dir>C:\projects\dt-level3\4-xyz-applications</my.build.target.dir> 
+		<!-- my.build.target.dir>C:\projects\dt-level3\4-xyz-applications</my.build.target.dir--> 
+		<my.build.target.dir>target</my.build.target.dir> 
 	</properties>
 	
 	<dependencies>
