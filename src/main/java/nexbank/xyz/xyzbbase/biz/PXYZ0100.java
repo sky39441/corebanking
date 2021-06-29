@@ -311,15 +311,7 @@ public class PXYZ0100 extends nexbank.fwk.base.ProcessUnit  {
 	    for (IRecord record : histList) {
 	    	String desc = record.getString("DESCRIPTION");
 	    	
-	    	// 적요의 값이 메시지 코드일 경우, 
-	    	// 로케일이 반영된 메시지 텍스트로 변환한후 출력 값 변경
-	    	String descLocaled = 
-	    		BaseUtils.getMessage(
-	    			desc, BaseUtils.asLocale(ca.getUserLocale()));
-	    	
-	    	if (StringUtils.isNotBlank(descLocaled)) {
-	    		record.set("DESCRIPTION", descLocaled);
-	    	}
+    		record.set("DESCRIPTION", desc+" --");
 	    }
 	    
 	    
