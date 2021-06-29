@@ -35,8 +35,13 @@
 	</repositories>
 
 	<properties>
+<<<<<<< HEAD
 		<!-- my.build.target.dir>C:\projects\dt-level3\4-xyz-applications</my.build.target.dir -->
 		<my.build.target.dir>target</my.build.target.dir>
+=======
+		<!-- my.build.target.dir>C:\projects\dt-level3\4-xyz-applications</my.build.target.dir--> 
+		<my.build.target.dir>target</my.build.target.dir> 
+>>>>>>> be663c490819741bfa71ebe083ae7b9667b27c89
 	</properties>
 	
 	<dependencies>
