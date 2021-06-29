@@ -109,6 +109,12 @@
 				<configuration>
 					<outputDirectory>${my.build.target.dir}</outputDirectory>
 					<finalName>${project.artifactId}</finalName>
+					<includes>
+						<include>**/*.class</include>
+						<include>**/uio/*</include>
+						<include>**/xio/*</include>
+						<include>**/xsql/*</include>
+					</includes>		
 				</configuration>
 			</plugin>
 			<plugin>
