@@ -1,4 +1,4 @@
-package nexbank.xyz.xyzbbase.biz;
+package nexbank.xyz.corebanking.biz;
 
 import java.util.Map;
 

@@ -1,4 +1,4 @@
-package nexbank.xyz.xyzbbase.biz;
+package nexbank.xyz.corebanking.biz;
 
 import org.apache.commons.lang3.StringUtils;
 

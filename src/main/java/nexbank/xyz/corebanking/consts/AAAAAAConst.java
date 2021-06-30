@@ -1,4 +1,4 @@
-package nexbank.xyz.xyzbbase.consts;
+package nexbank.xyz.corebanking.consts;
 
 /**
  * AAAAAAConst 상수 클래스. 

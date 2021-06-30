@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.skcc.nexcoredt</groupId>
-	<artifactId>nexbank.xyz.xyzbbase</artifactId>
+	<artifactId>nexbank.xyz.corebanking</artifactId>
 	<version>1</version>
 	<name>corebanking</name>
 	<description>코어뱅킹 샘플. 입금/출금/이체</description>

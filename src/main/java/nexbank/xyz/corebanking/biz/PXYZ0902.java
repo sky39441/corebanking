@@ -1,4 +1,4 @@
-package nexbank.xyz.xyzbbase.biz;
+package nexbank.xyz.corebanking.biz;
 
 import nexbank.common.OutboundHeader;
 import nexbank.fwk.outbound.OutboundTarget;

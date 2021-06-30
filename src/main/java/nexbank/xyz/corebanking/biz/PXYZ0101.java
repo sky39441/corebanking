@@ -1,4 +1,4 @@
-package nexbank.xyz.xyzbbase.biz;
+package nexbank.xyz.corebanking.biz;
 
 import org.apache.commons.logging.Log;
 
@@ -104,12 +104,8 @@ public class PXYZ0101 extends nexbank.fwk.base.ProcessUnit {
 		    requestData.put("CRE_DTM", DateUtils.getDateString("yyyyMMddHHmmssSSS"));
 		    requestData.put("UPD_DTM", DateUtils.getDateString("yyyyMMddHHmmssSSS"));
 		    
-//		    requestData.put("DESCRIPTION", "무정지배포 검증");
-//		    requestData.put("DESCRIPTION", "파라미터-"+BaseUtils.getRuntimeConfiguration("PARAM_TEST"));
-
 		    IDataSet dTB_CBS_XYZ_ACC_M_00_U001Res = dTB_CBS_XYZ_ACC_M_00.u001(requestData, onlineCtx);
-//		    IDataSet dTB_CBS_XYZ_ACC_M_00_U001Res = dbioUpdate("TB_CBS_XYZ_ACC_M", requestData, onlineCtx);
-//		    
+
 		    if(dTB_CBS_XYZ_ACC_M_00_U001Res.getInt("EXPECTED_ROW") < 1){
 		    	// 계좌입금을 실패하였습니다.
 		    	throw new BizRuntimeException("XYZE0003");
@@ -135,9 +131,6 @@ public class PXYZ0101 extends nexbank.fwk.base.ProcessUnit {
 	    		log.info("계좌 이력 등록 완료.");
 	    	}
 	    	
-//	    	// 배치모드 대량등록
-//		    dTB_CBS_XYZ_ACC_H_00.dTB_CBS_XYZ_ACC_H_00_I002(requestData, onlineCtx);
-	
 		    // 회계 모듈 호출
 		    IDataSet fFWK09CashReq = new DataSet();
 		    fFWK09CashReq.put("ACC_NO", requestData.getString("ACC_NO"));

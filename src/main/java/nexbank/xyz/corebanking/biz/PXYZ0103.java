@@ -1,4 +1,4 @@
-package nexbank.xyz.xyzbbase.biz;
+package nexbank.xyz.corebanking.biz;
 
 import org.apache.commons.logging.Log;
 
@@ -97,7 +97,7 @@ public class PXYZ0103 extends nexbank.fwk.base.ProcessUnit {
 		    callService("XYZ01101", depositDataSet, onlineCtx);
 		    /**********************************************************************/
 		
-		    EventSender.getInstance().publishEvents("XYZ99901", requestData, onlineCtx);
+		    EventSender.getInstance().publishEvents("XYZ88001", requestData, onlineCtx);
 		    log.info("상시감사 메시지 전송:"+requestData);
 		    
 		    return responseData;

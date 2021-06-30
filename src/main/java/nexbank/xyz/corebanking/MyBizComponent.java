@@ -1,4 +1,4 @@
-package nexbank.xyz.xyzbbase;
+package nexbank.xyz.corebanking;
 
 import nexcore.framework.core.component.streotype.BizComponent;
 

@@ -1,4 +1,4 @@
-package nexbank.xyz.xyzbbase.biz;
+package nexbank.xyz.corebanking.biz;
 
 import nexbank.common.CommonArea;
 import nexcore.framework.core.component.streotype.BizMethod;
